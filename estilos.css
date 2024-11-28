@@ -1,3 +1,7 @@
 body {
     background-color: black; /* Substitua pelo código da cor desejada */
 }
+
+Header{
+    display: flex;
+}
