@@ -1,7 +1,19 @@
 body{
-    background-color: blue;
+    background-color: white;
 }
 
 header{
     display: flex;
+    background-color: blue;
+    justify-content: space-around;
+    align-items: baseline;
+}
+
+.Menu{
+    list-style: none;
+    display: flex;
+}
+
+.Submenu{
+    display: none;
 }
