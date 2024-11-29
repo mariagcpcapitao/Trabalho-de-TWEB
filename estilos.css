@@ -1,19 +1,18 @@
 body{
-    background-color: white;
-}
-
-header{
-    display: flex;
-    background-color: blue;
-    justify-content: space-around;
-    align-items: baseline;
+    margin:0;
 }
 
 .Menu{
-    list-style: none;
     display: flex;
+    color: white;
+    background-color: blue;
+    width: 100%;
 }
 
-.Submenu{
+ul{
+    list-style: none;
+}
+
+#Submenu1, #Submenu2, #Submenu3, #Submenu4{
     display: none;
 }
