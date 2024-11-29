@@ -2,7 +2,7 @@ body{
     margin:0;
 }
 
-.Menu{
+.menu{
     display: flex;
     color: white;
     background-color: blue;
@@ -13,6 +13,6 @@ ul{
     list-style: none;
 }
 
-#Submenu1, #Submenu2, #Submenu3, #Submenu4{
+#submenu1, #submenu2, #submenu3, #submenu4{
     display: none;
 }
