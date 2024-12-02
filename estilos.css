@@ -1,3 +1,5 @@
+
+/*PARTE GERAL DO SITE*/
 body{
     margin:0;
 }
@@ -6,19 +8,38 @@ ul{
     list-style: none;
 }
 
+/*PARTE INICIAL DO SITE*/
+
 nav{
     background-color: #007bff;
     color: white;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
 }
 
+#menu-img1, #menu-img2, #menu-img3{
+    height: 32px;
+    padding-right: 0;
+    padding-left: 10px;
+    width: auto;
+}
 .menu-options li{
     display: inline;
 }
 
-
 #submenu1, #submenu2, #submenu3, #submenu4{
     display: none;
 }
+
+/*CONTEÚDO DO SITE*/
+
+
+
+
+
+
+/*PARTE FINAL DO SITE*/
 
 footer{
     background-color: #007bff;
