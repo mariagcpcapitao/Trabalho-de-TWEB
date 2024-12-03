@@ -1,49 +1,57 @@
-
 /*PARTE GERAL DO SITE*/
 body{
-    margin:0;
+    display:grid;
+         grid-template-rows: auto auto 1fr auto; 
+         grid-template-columns: repeat(4, 1fr);
+         grid-template-areas: 
+             "HEADER HEADER HEADER HEADER"
+             "MENU   MENU   MENU   MENU"
+             "CORPO  CORPO  CORPO  CORPO"
+             "FOOTER FOOTER FOOTER FOOTER";
+    margin: 0;
+    padding:0;
+    box-sizing: border-box;
+    height: 100vh;
 }
 
 ul{
     list-style: none;
 }
 
-/*PARTE INICIAL DO SITE*/
+/*HEADER DO SITE*/
 
+header{
+    grid-area: HEADER;
+    background-color: black;
+    color:white;
+}
+
+/*PARTE MENU DO SITE*/
 nav{
+    grid-area: MENU;
     background-color: #007bff;
     color: white;
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-}
-
-#menu-img1, #menu-img2, #menu-img3{
-    height: 32px;
-    padding-right: 0;
-    padding-left: 10px;
-    width: auto;
-}
-.menu-options li{
-    display: inline;
 }
 
 #submenu1, #submenu2, #submenu3, #submenu4{
-    display: none;
+    display: none; /*Fazer com que fique escondido até o mouse passe por cima*/
 }
 
+
 /*CONTEÚDO DO SITE*/
-
-
-
-
+.corpo{
+    grid-area: CORPO;
+}
 
 
 /*PARTE FINAL DO SITE*/
-
 footer{
+    grid-area: FOOTER;
     background-color: #007bff;
     color: white;
+    display: flex;
+    justify-content: center; /*FAZER SASS PARA O RESTO COM GRIDD*/
 }
+
 
 
