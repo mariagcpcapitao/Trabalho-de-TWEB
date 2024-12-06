@@ -27,12 +27,44 @@ nav{
 #submenu1, #submenu2, #submenu3, #submenu4{
     display: none; /*Fazer com que fique escondido até o mouse passe por cima*/
 }
-
-
-/*CONTEÚDO DO SITE*/
-.corpo{
+.suggestions-grid
+{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
 }
-
+.offers-section
+{
+    margin: 0 auto;
+    padding: 20px;
+}
+.offers-header
+{
+    text-align: center;
+    margin-bottom: 40px;
+}
+.offers-header h1 
+{
+    font-size: 2em;
+    color: #003366;
+}
+.offers-header p 
+{
+    font-size: 1em;
+    color: #666;
+}
+.offers-grid 
+{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+}
+.partners-grid 
+{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+}
 
 /*PARTE FINAL DO SITE*/
 footer{
