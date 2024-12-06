@@ -90,12 +90,57 @@ nav{
 }
 
 /*PARTE FINAL DO SITE*/
-footer{
+footer {
     background-color: #007bff;
     color: white;
-    display: flex;
-    justify-content: center; /*FAZER SASS PARA O RESTO COM GRIDD*/
+    padding: 20px 40px;
+    font-family: Arial, sans-serif;
+    font-size: 14px;
 }
+
+footer .linha1 {
+    display: flex;
+    align-items: center; 
+    gap: 10px; 
+    margin-bottom: 10px; 
+}
+
+footer .linha1 img {
+    height: 40px; 
+}
+
+footer .linha2 {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: nowrap; 
+    gap: 10px; 
+}
+
+footer .linha2 > ul {
+    display: flex;
+    justify-content: space-between;
+    flex: 1;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+footer .linha2 > ul > li {
+    font-weight: bold;
+    margin-right: 10px; 
+}
+
+footer .linha2 > ul > li ul {
+    margin-top: 5px; 
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+}
+
+footer .linha2 > ul > li ul li {
+    font-weight: normal;
+}
+
 
 
 
