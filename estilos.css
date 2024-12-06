@@ -1,18 +1,11 @@
 /*PARTE GERAL DO SITE*/
 body{
-    display:grid;
-         grid-template-rows: auto auto 1fr auto; 
-         grid-template-columns: repeat(4, 1fr);
-         grid-template-areas: 
-             "HEADER HEADER HEADER HEADER"
-             "MENU   MENU   MENU   MENU"
-             "CORPO  CORPO  CORPO  CORPO"
-             "FOOTER FOOTER FOOTER FOOTER";
+    font-family: Arial, Helvetica, sans-serif;
     margin: 0;
     padding:0;
-    box-sizing: border-box;
-    height: 100vh;
-}
+    background-color: #f8f9fc;
+    color: #333;
+    }
 
 ul{
     list-style: none;
@@ -21,14 +14,12 @@ ul{
 /*HEADER DO SITE*/
 
 header{
-    grid-area: HEADER;
     background-color: black;
     color:white;
 }
 
 /*PARTE MENU DO SITE*/
 nav{
-    grid-area: MENU;
     background-color: #007bff;
     color: white;
 }
@@ -40,13 +31,11 @@ nav{
 
 /*CONTEÚDO DO SITE*/
 .corpo{
-    grid-area: CORPO;
 }
 
 
 /*PARTE FINAL DO SITE*/
 footer{
-    grid-area: FOOTER;
     background-color: #007bff;
     color: white;
     display: flex;
