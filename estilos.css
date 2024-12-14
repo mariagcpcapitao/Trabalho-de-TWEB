@@ -1,146 +1,125 @@
-/*PARTE GERAL DO SITE*/
-body{
-    font-family: Arial, Helvetica, sans-serif;
-    margin: 0;
-    padding:0;
-    background-color: #f8f9fc;
-    color: #333;
-    }
-
-ul{
-    list-style: none;
+@charset "UTF-8";
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
-/*HEADER DO SITE*/
-
-header{
-    background-color: black;
-    color:white;
+body {
+  font-family: "Arial, sans-serif";
+  color: #333333;
+  background-color: #f5f5f5;
 }
 
-/*PARTE MENU DO SITE*/
-nav{
-    background-color: #007bff;
-    color: white;
+a {
+  text-decoration: none;
+  color: inherit;
 }
 
-#submenu1, #submenu2, #submenu3, #submenu4{
-    display: none; /*Fazer com que fique escondido até o mouse passe por cima*/
+ul {
+  list-style: none;
 }
-.suggestions-grid
-{
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-    gap: 20px;
-    max-width: 1200px;
-    margin: 0 auto;
+
+.suggestions .suggestions-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 20px;
+  max-width: 1200px;
+  margin: 0 auto;
 }
-.suggestion-options
-{
-    text-align: center;
+.suggestions .suggestions-grid .suggestion-options {
+  text-align: center;
 }
-.suggestion-img
-{
-    position: relative;
-    width: 100%;
-    padding-top: 150%; /* Define a proporção 2:3 (altura maior que largura) */
-    overflow: hidden;
+.suggestions .suggestions-grid .suggestion-options .suggestion-img {
+  position: relative;
+  width: 100%;
+  padding-top: 150%; /* Define a proporção 2:3 (altura maior que largura) */
+  overflow: hidden;
 }
+
+.check-offers .offers-section {
+  margin: 0 auto;
+  padding: 20px;
+}
+.check-offers .offers-section .offers-header {
+  text-align: center;
+  margin-bottom: 40px;
+}
+.check-offers .offers-section .offers-header h1 {
+  font-size: 2em;
+  color: #003366;
+}
+.check-offers .offers-section .offers-header p {
+  font-size: 1em;
+  color: #666;
+}
+.check-offers .offers-section .offers-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 20px;
+}
+
+.our-partners .partners-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 20px;
+}
+
 .image-wrapper img {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    clip-path: ellipse(50% 100% at 50% 100%);
-    transition: transform 0.3s ease;
-  }
-.offers-section
-{
-    margin: 0 auto;
-    padding: 20px;
-}
-.offers-header
-{
-    text-align: center;
-    margin-bottom: 40px;
-}
-.offers-header h1 
-{
-    font-size: 2em;
-    color: #003366;
-}
-.offers-header p 
-{
-    font-size: 1em;
-    color: #666;
-}
-.offers-grid 
-{
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-    gap: 20px;
-}
-.partners-grid 
-{
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-    gap: 20px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -webkit-clip-path: ellipse(50% 100% at 50% 100%);
+          clip-path: ellipse(50% 100% at 50% 100%);
+  transition: transform 0.3s ease;
 }
 
-/*PARTE FINAL DO SITE*/
+header {
+  color: white;
+}
+header #information {
+  background-color: #000361;
+  display: flex;
+  justify-content: flex-start;
+}
+header #information h6 {
+  padding: 16px;
+}
+header nav {
+  background-color: #005bac;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 16px;
+}
+header nav ul {
+  list-style: none;
+  display: flex;
+}
+header nav ul li {
+  margin-right: 16px;
+}
+header nav ul li #submenu1, header nav ul li #submenu2, header nav ul li #submenu3, header nav ul li #submenu4 {
+  display: none;
+}
+header nav ul li a {
+  text-decoration: none;
+  font-size: 1rem;
+}
+header nav ul li a:hover {
+  text-decoration: underline;
+}
+
 footer {
-    background-color: #007bff;
-    color: white;
-    padding: 20px 40px;
-    font-family: Arial, sans-serif;
-    font-size: 14px;
+  background-color: #004079;
+  color: white;
+  text-align: center;
+  padding: 16px;
 }
-
-footer .linha1 {
-    display: flex;
-    align-items: center; 
-    gap: 10px; 
-    margin-bottom: 10px; 
-}
-
-footer .linha1 img {
-    height: 40px; 
-}
-
-footer .linha2 {
-    display: flex;
-    justify-content: space-between;
-    flex-wrap: nowrap; 
-    gap: 10px; 
-}
-
-footer .linha2 > ul {
-    display: flex;
-    justify-content: space-between;
-    flex: 1;
-    list-style: none;
-    padding: 0;
-    margin: 0;
-}
-
-footer .linha2 > ul > li {
-    font-weight: bold;
-    margin-right: 10px; 
-}
-
-footer .linha2 > ul > li ul {
-    margin-top: 5px; 
-    padding: 0;
-    display: flex;
-    flex-direction: column;
-}
-
-footer .linha2 > ul > li ul li {
-    font-weight: normal;
-}
-
-
-
-
+footer p {
+  font-size: 1rem;
+}/*# sourceMappingURL=estilos.css.map */
