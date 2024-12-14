@@ -119,7 +119,35 @@ footer {
   color: white;
   text-align: center;
   padding: 16px;
+  display: flex;
+  flex-direction: column;
 }
-footer p {
+footer .linha3 {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+footer .linha3 .download {
+  display: flex;
+  justify-content: flex-start;
+}
+footer .linha3 .download img {
+  height: 50px;
+  width: 150px;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+footer .linha3 .social-media {
+  display: flex;
+  justify-content: flex-end;
+}
+footer .linha3 .social-media img {
+  height: 25px;
+  width: 25px;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+footer h6 {
   font-size: 1rem;
 }/*# sourceMappingURL=estilos.css.map */

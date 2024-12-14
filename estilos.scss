@@ -162,6 +162,35 @@ footer {
   color: $text-color1;
   text-align: center;
   padding: $padding-default;
+  display: flex;
+  flex-direction: column;
+
+  .linha3{
+    display:flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+
+    .download{
+      display:flex;
+      justify-content: flex-start;
+      img{
+        height:50px;
+        width: 150px;
+        object-fit: cover;
+      }
+    }
+    .social-media{
+      display:flex;
+      justify-content: flex-end;
+      img{
+        height: 25px;
+        width: 25px;
+        object-fit: cover;
+      }
+    }
+
+  }
 
   h6{
     font-size: $text-size;
