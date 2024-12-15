@@ -160,16 +160,40 @@ header {
 footer {
   background-color: $primary-color;
   color: $text-color1;
-  text-align: center;
-  padding: $padding-default;
+  padding-left: 150px;
+  padding-right:150px;
   display: flex;
   flex-direction: column;
+
+
+  .linha2{
+    display:flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    
+
+    ul{
+      li{
+        display:inline-block;
+        margin:20px;
+        
+        ul{
+          display:flex;
+          flex-direction: column;
+          line-height: 0.4;
+        }
+        
+      }
+    }
+  }
+  
 
   .linha3{
     display:flex;
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
+    padding:15px;
 
     .download{
       display:flex;
@@ -192,8 +216,11 @@ footer {
 
   }
 
-  h6{
+  p{
+    padding:15px;
     font-size: $text-size;
+    box-shadow: 0 -2px 0  rgba(255, 255, 255, 0.2),
+                0 2px 0 rgba(255, 255, 255, 0.2);
   }
 }
 
