@@ -20,12 +20,11 @@ header{
 
 /*PARTE MENU DO SITE*/
 nav{
-    background-color: #007bff;
+    background-color: #0171CF;
     color: white;
 }
-
 #submenu1, #submenu2, #submenu3, #submenu4{
-    display: none; /*Fazer com que fique escondido até o mouse passe por cima*/
+    display: none;
 }
 .suggestions-grid
 {
@@ -43,18 +42,14 @@ nav{
 {
     position: relative;
     width: 100%;
-    padding-top: 150%; /* Define a proporção 2:3 (altura maior que largura) */
+    padding-top: 150%;
     overflow: hidden;
+    .imagem-cortada {
+        clip-path: circle(50% at right);
+      }
 }
-.image-wrapper img {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    clip-path: ellipse(50% 100% at 50% 100%);
-    transition: transform 0.3s ease;
+.suggestion-img img {
+
   }
 .offers-section
 {
@@ -91,7 +86,7 @@ nav{
 
 /*PARTE FINAL DO SITE*/
 footer{
-    background-color: #007bff;
+    background-color: #0171CF;
     color: white;
     display: flex;
     justify-content: center; /*FAZER SASS PARA O RESTO COM GRIDD*/
