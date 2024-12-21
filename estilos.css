@@ -1,24 +1,16 @@
-/*PARTE GERAL DO SITE*/
-body{
-    font-family: Arial, Helvetica, sans-serif;
-    margin: 0;
-    padding:0;
-    background-color: #f8f9fc;
-    color: #333;
-    }
-
-ul{
-    list-style: none;
+@charset "UTF-8";
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
-/*HEADER DO SITE*/
-
-header{
-    background-color: black;
-    color:white;
+body {
+  font-family: "Arial, sans-serif";
+  color: #333333;
+  background-color: #f5f5f5;
 }
 
-/*PARTE MENU DO SITE*/
 nav{
     background-color: #0171CF;
     color: white;
@@ -26,31 +18,21 @@ nav{
 #submenu1, #submenu2, #submenu3, #submenu4{
     display: none;
 }
-.suggestions-grid
-{
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-    gap: 20px;
-    max-width: 1200px;
-    margin: 0 auto;
+
+header {
+  color: white;
 }
-.suggestion-options
-{
-    text-align: center;
+header #information {
+  background-color: #002546;
+  display: flex;
+  justify-content: flex-start;
 }
 .suggestion-img
 {
     position: relative;
     width: 100%;
-    padding-top: 150%;
-    overflow: hidden;
-    .imagem-cortada {
-        clip-path: circle(50% at right);
-      }
 }
-.suggestion-img img {
 
-  }
 .offers-section
 {
     margin: 0 auto;
@@ -91,6 +73,49 @@ footer{
     display: flex;
     justify-content: center; /*FAZER SASS PARA O RESTO COM GRIDD*/
 }
-
-
-
+footer .linha2 {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+footer .linha2 ul li {
+  display: inline-block;
+  margin: 20px;
+}
+footer .linha2 ul li ul {
+  display: flex;
+  flex-direction: column;
+  line-height: 0.4;
+}
+footer .linha3 {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px;
+}
+footer .linha3 .download {
+  display: flex;
+  justify-content: flex-start;
+}
+footer .linha3 .download img {
+  height: 50px;
+  width: 150px;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+footer .linha3 .social-media {
+  display: flex;
+  justify-content: flex-end;
+}
+footer .linha3 .social-media img {
+  height: 25px;
+  width: 25px;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+footer p {
+  padding: 15px;
+  font-size: 1rem;
+  box-shadow: 0 -2px 0 rgba(255, 255, 255, 0.2), 0 2px 0 rgba(255, 255, 255, 0.2);
+}/*# sourceMappingURL=estilos.css.map */
