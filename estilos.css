@@ -27,10 +27,57 @@ header #information {
   display: flex;
   justify-content: flex-start;
 }
-.suggestion-img
+.best-offers-grid
 {
-    position: relative;
-    width: 100%;
+    display: flex;   
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+
+}
+.italy li
+{
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+    color: black;
+    width: 250px;
+    height: 50px;
+    border: gray 1px solid;
+    border-radius: 6px;
+    box-shadow: gray 0px 0px 10px;
+    margin: 8px;
+}
+.europe li
+{
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+    color: black;
+    width: 250px;
+    height: 50px;
+    border: gray 1px solid;
+    border-radius: 6px;
+    box-shadow: gray 0px 0px 10px;
+    margin: 8px;
+}
+.world li
+{
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+    color: black;
+    width: 250px;
+    height: 50px;
+    border: gray 1px solid;
+    border-radius: 6px;
+    box-shadow: gray 0px 0px 10px;
+    margin: 8px;
+}
+
+
+.suggestions-grid
+{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
 }
 
 .offers-section
