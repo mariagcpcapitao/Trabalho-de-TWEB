@@ -222,11 +222,19 @@ footer {
   padding-right: 150px;
   display: flex;
   flex-direction: column;
+  padding-top: 70px;
+  border-top: #003366 5px solid;
 }
 footer .linha2 {
   display: flex;
   justify-content: space-between;
-  align-items: flex-start;
+  align-items: center;
+  width: 100%;
+}
+footer .linha2 ul {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
 }
 footer .linha2 ul li {
   display: inline-block;

@@ -111,6 +111,10 @@ header {
   background-image: url(./img/rome-tripoli.jpg);
 }
 .best-offers-from{
+
+
+
+
     .best-offers-grid{
        display:flex;   
        justify-content:center;
@@ -264,15 +268,21 @@ footer {
   padding-right:150px;
   display: flex;
   flex-direction: column;
+  padding-top: 70px;
+  border-top:#003366 5px solid;
 
 
   .linha2{
     display:flex;
     justify-content: space-between;
-    align-items: flex-start;
+    align-items: center;
+    width: 100%;
     
 
     ul{
+      display: flex;
+      justify-content: space-between;
+      width: 100%;
       li{
         display:inline-block;
         margin:20px;
@@ -282,7 +292,6 @@ footer {
           flex-direction: column;
           line-height: 0.4;
         }
-        
       }
     }
   }
@@ -298,6 +307,7 @@ footer {
     .download{
       display:flex;
       justify-content: flex-start;
+
       img{
         height:50px;
         width: 150px;
@@ -307,6 +317,7 @@ footer {
     .social-media{
       display:flex;
       justify-content: flex-end;
+      
       img{
         height: 25px;
         width: 25px;
