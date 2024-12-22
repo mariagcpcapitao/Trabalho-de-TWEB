@@ -6,7 +6,7 @@
 }
 
 body {
-  font-family: "Arial, sans-serif";
+  font-family: 'Montserrat', sans-serif;
   color: #333333;
   background-color: #f5f5f5;
 }
@@ -97,7 +97,6 @@ header nav .menu2 button {
     justify-content:center;
     margin:0px;
     gap: 0.5%;
-    font-family: 'Montserrat', sans-serif;
 }
 .italy, .europe, .world
 {
@@ -256,6 +255,7 @@ header nav .menu2 button {
 {
   margin:2% 15%
 }
+
 .partners-grid 
 {
     width: 100%;
@@ -267,8 +267,22 @@ header nav .menu2 button {
 .partners img 
 {
     width: 100%; 
-    height:75% ;
+    height:60% ;
     margin-bottom: 10px;
+}
+#part-but
+{
+  display: flex;
+  justify-content: center;
+}
+.our-partners button
+{
+  width: 25%;
+  height: 40px;
+  border-radius: 6px;
+  border-color: #0171CF;
+  color: #1770cf;
+  background-color: white;
 }
 /*PARTE FINAL DO SITE*/
 footer {
