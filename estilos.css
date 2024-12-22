@@ -1,3 +1,4 @@
+@charset "UTF-8";
 * {
   margin: 0;
   padding: 0;
@@ -9,13 +10,15 @@ body {
   color: #333333;
   background-color: #f5f5f5;
 }
-
 a {
   text-decoration: none;
-  color: inherit;
+  color: inherit;}
+nav{
+    background-color: #0171CF;
+    color: white;
 }
-
-ul {
+ul 
+{
   list-style: none;
 }
 
@@ -23,9 +26,10 @@ header {
   color: white;
 }
 header #information {
-  background-color: #0d3e73;
+  background-color: orange;
   display: flex;
   justify-content: flex-start;
+  color: black;
 }
 header #information h6 {
   padding: 16px;
@@ -40,6 +44,7 @@ header nav .menu1 {
   display: flex;
   align-items: center;
   justify-content: flex-start;
+  color: black;
 }
 header nav .menu1 .menu-img {
   height: 35px;
@@ -65,156 +70,183 @@ header nav .menu2 {
 header nav .menu2 button {
   background-color: transparent;
   border: none;
-  color: white;
-}
-header nav .menu2 img {
-  height: 25px;
-  width: 25px;
-}
-
-.capa {
+  color: white;}
+.capa
+{
+  width: 100%;
+  height:650px;
   background-image: url(./img/rome-tripoli.jpg);
+  background-size: cover;
 }
-
-.best-offers-from .best-offers-grid {
-  display: flex;
-  justify-content: center;
-  margin: 0px;
-  gap: 0.5%;
-  font-family: "Montserrat", sans-serif;
+.form-conteiner
+{
+  background-color: #f5faff;
+  width: 350px;
+  border-radius: 8px;
+  box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
 }
-.best-offers-from .best-offers-grid .italy, .best-offers-from .best-offers-grid .europe, .best-offers-from .best-offers-grid .world {
+.best-offers-header h1,.best-offers-header h2
+{
+  text-align: center;
+}
+.best-offers-grid
+{
+    display:flex;   
+    justify-content:center;
+    margin:0px;
+    gap: 0.5%;
+    font-family: 'Montserrat', sans-serif;
+}
+.italy, .europe, .world
+{
   width: 380px;
 }
-.best-offers-from .world li, .best-offers-from .europe li, .best-offers-from .italy li {
-  display: flex;
-  flex-direction: column;
-  flex-grow: 0;
-  background-color: white;
-  color: rgb(44, 44, 44);
-  width: 100%;
-  height: 100px;
-  padding: 10px;
-  border: lightgrey 1px solid;
-  border-radius: 6px;
-  box-shadow: 0px 2px 10px gray;
-  margin: 25px;
-  position: relative;
+.world li, .europe li, .italy li
+{
+    display: flex;
+    flex-direction: column;
+    flex-grow: 0;
+    background-color: white;
+    color: rgb(44, 44, 44);
+    width: 100%;
+    height:100px;
+    padding:10px;
+    border: lightgrey 1px solid;
+    border-radius: 6px;
+    box-shadow: 0px 2px 10px gray;
+    margin:25px;
+    position: relative;
 }
-.best-offers-from .world li p, .best-offers-from .europe li p, .best-offers-from .italy li p {
+.world li p, .europe li p, .italy li p
+{
   position: absolute;
   bottom: 5px;
-  right: 10px;
+  right: 10px; 
   color: #0171CF;
   font-weight: 500;
   font-size: 22px;
 }
-.best-offers-from .world li h1, .best-offers-from .europe li h1, .best-offers-from .italy li h1 {
+
+
+.world li h1, .europe li h1, .italy li h1
+{
   color: white;
   text-align: center;
   text-decoration: none;
   font-weight: 100;
 }
-.best-offers-from .world li h2, .best-offers-from .europe li h2, .best-offers-from .italy li h2 {
+.world li h2, .europe li h2, .italy li h2
+{
   position: absolute;
-  bottom: 55px;
-  left: 10px;
+  bottom: 55px;;
+  left: 10px; 
   font-weight: 530;
-  font-size: 17px;
+  font-size:17px;
 }
-.best-offers-from .world li h3, .best-offers-from .europe li h3, .best-offers-from .italy li h3 {
+.world li h3, .europe li h3, .italy li h3
+{
   position: absolute;
   bottom: 5px;
-  left: 10px;
+  left: 10px; 
   font-weight: 200;
   font-size: 15px;
 }
-.best-offers-from .italy h1, .best-offers-from .world h1, .best-offers-from .europe h1 {
+.italy h1, .world h1, .europe h1
+{
   text-align: center;
 }
-.best-offers-from .italy #catania, .best-offers-from .world #new-york, .best-offers-from .europe #athenes {
+ .italy #catania, .world #new-york, .europe #athenes
+{
   width: 100%;
   height: 250px;
 }
-.best-offers-from #catania {
-  background-image: url(./img/catania.png);
-  background-repeat: no-repeat;
-  background-size: 100% 65%;
+#catania
+{
+    background-image: url(./img/catania.png);
+    background-repeat: no-repeat;
+    background-size: 100% 65%;
 }
-.best-offers-from #athenes {
-  background-image: url(./img/athenes.jpg);
-  background-repeat: no-repeat;
-  background-size: 100% 65%;
+#athenes
+{
+    background-image: url(./img/athenes.jpg);
+    background-repeat: no-repeat;
+    background-size: 100% 65%;
 }
-.best-offers-from #new-york {
-  background-image: url(./img/newyork.jpg);
-  background-repeat: no-repeat;
-  background-size: 100% 65%;
+#new-york
+{
+    background-image: url(./img/newyork.jpg);
+    background-repeat: no-repeat;
+    background-size: 100% 65%;
 }
-
-.suggestions-grid {
-  display: grid;
-  grid-template-columns: repeat(5, 175px);
-  gap: 5%;
-  justify-content: center;
-  margin: 0 auto;
+.suggestions-grid
+{
+    display: grid; 
+    grid-template-columns: repeat(5, 175px); 
+    gap: 5%; 
+    justify-content: center;
+    margin: 0 auto;
 }
-
-.suggestion-options img {
-  border-radius: 150px 0 150px 0;
-  width: 100%;
+.suggestion-options img
+{
+    border-radius: 150px 0 150px 0;
+    width: 100%;
 }
-
-.check-offers {
-  background-color: #f5faff;
-  padding: 40px 20px;
+/*-------------------------*/
+.check-offers 
+{
+    background-color: #f5faff;
+    padding: 40px 20px;
 }
-
-.offers-header h1 {
-  font-size: 2em;
-  color: #003366;
-  margin-bottom: 10px;
+.offers-header h1
+{
+    font-size: 2em;
+    color: #003366;
+    margin-bottom: 10px;
 }
-
-.offers-header p {
-  font-size: 1em;
-  color: #666;
-  margin-bottom: 30px;
+.offers-header p 
+{
+    font-size: 1em;
+    color: #666;
+    margin-bottom: 30px;
 }
-
-.offers-grid {
-  display: grid;
-  width: 100%;
-  grid-template-columns: repeat(4, 400px);
-  gap: 5%;
-  justify-content: center;
-}
-
-.offer img {
-  width: 90%;
-  height: 75%;
-  margin-bottom: 10px;
+.offers-grid 
+{
+    display: grid;
+    width: 100%;
+    grid-template-columns: repeat(4, 400px); 
+    gap: 5%; 
+    justify-content: center;
 }
 
-.offer a {
-  font-size: 0.9em;
-  color: gray;
-  text-decoration: none;
+.offer img 
+{
+    width: 90%; 
+    height:75% ;
+    margin-bottom: 10px;
 }
 
-.partners-grid {
-  display: grid;
-  grid-template-columns: repeat(3, 400px);
-  gap: 1.5%;
-  justify-content: center;
-}
+.offer a 
+{
+    font-size: 0.9em;
+    color: gray;
+    text-decoration: none;
+  }
+.partners-grid 
+{
+    display: grid;
+    grid-template-columns: repeat(3, 400px); 
+    gap: 1.5%; 
+    justify-content: center;
 
-.partners img {
-  width: 90%;
-  height: 75%;
-  margin-bottom: 10px;
 }
-
+.partners img 
+{
+    width: 90%; 
+    height:75% ;
+    margin-bottom: 10px;
+}
+/*PARTE FINAL DO SITE*/
 footer {
   background-color: #1770cf;
   color: white;
@@ -228,12 +260,7 @@ footer {
 footer .linha2 {
   display: flex;
   justify-content: space-between;
-  align-items: center;
-  width: 100%;
-}
-footer .linha2 ul {
-  display: flex;
-  justify-content: space-between;
+  align-items:center;
   width: 100%;
 }
 footer .linha2 ul li {
