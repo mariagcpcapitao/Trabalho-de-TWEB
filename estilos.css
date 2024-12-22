@@ -70,6 +70,10 @@ header #information {
     justify-content: center;
     margin: 0 auto;
 }
+.suggestion-options img
+{
+    border-radius: 125px 0 125px 0;
+}
 /*-------------------------*/
 .check-offers 
 {
