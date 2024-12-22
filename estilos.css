@@ -161,6 +161,17 @@ header nav .menu2 button {
   width: 100%;
   height: 250px;
 }
+.best-offers-grid button
+{
+  width: 100%;
+  height: 40px;
+  border-radius: 6px;
+  border-color: #0171CF;
+  color: #1770cf;
+  background-color: white;
+  align-items: center;
+  margin: 25px;
+}
 #catania
 {
     background-image: url(./img/catania.png);
@@ -178,6 +189,10 @@ header nav .menu2 button {
     background-image: url(./img/newyork.jpg);
     background-repeat: no-repeat;
     background-size: 100% 65%;
+}
+.suggestions-header
+{
+  text-align: center;
 }
 .suggestions-grid
 {
