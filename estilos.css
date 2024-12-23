@@ -23,12 +23,23 @@ header {
   color: white;
 }
 header #information {
-  background-color: #0d3e73;
+  background-color: orange;
+  color: #333333;
+  font-size: medium;
   display: flex;
   justify-content: flex-start;
+  align-items: center;
+  padding: 10px;
 }
 header #information h6 {
-  padding: 16px;
+  font-size: 17px;
+  margin-right: 25px;
+  margin-left: 10px;
+}
+header #information a {
+  display: flex;
+  align-content: center;
+  margin-right: 20px;
 }
 header nav {
   background-color: #1770cf;
@@ -66,6 +77,7 @@ header nav .menu2 button {
   background-color: transparent;
   border: none;
   color: white;
+  margin-left: 20px;
 }
 header nav .menu2 img {
   height: 25px;

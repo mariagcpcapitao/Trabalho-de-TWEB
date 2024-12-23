@@ -44,13 +44,25 @@ header {
   color: $text-color1;
 
   #information{
-    background-color: darken($primary-color, 20%);
+    background-color: orange;
+    color: $text-color2;
+    font-size: medium;
     display:flex;
     justify-content: flex-start;
+    align-items: center;
+    padding:10px;
 
     h6{
-      padding: $padding-default;
+      font-size: 17px;
+      margin-right:25px;
+      margin-left:10px;
     }
+    a{
+      display:flex;
+      align-content: center;
+      margin-right:20px;
+    }
+
   }
 
   nav {
@@ -94,6 +106,7 @@ header {
         background-color: transparent;
         border:none;
         color:$text-color1;
+        margin-left: 20px;
       }
 
       img{
