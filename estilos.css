@@ -16,7 +16,7 @@ a {
 }
 
 ul {
-  list-style: none;
+  list-style-type: none;
 }
 
 header {
@@ -258,6 +258,10 @@ footer .linha2 ul {
   justify-content: space-between;
   width: 100%;
 }
+footer .linha2 ul .titulo {
+  align-items: center;
+  box-shadow: 0 2px 0 rgba(255, 255, 255, 0.2);
+}
 footer .linha2 ul li {
   display: inline-block;
   margin: 20px;
@@ -266,6 +270,7 @@ footer .linha2 ul li ul {
   display: flex;
   flex-direction: column;
   line-height: 0.4;
+  font-weight: bold;
 }
 footer .linha3 {
   display: flex;
@@ -296,6 +301,7 @@ footer .linha3 .social-media img {
 }
 footer p {
   padding: 15px;
-  font-size: 1rem;
+  font-size: small;
+  text-align: center;
   box-shadow: 0 -2px 0 rgba(255, 255, 255, 0.2), 0 2px 0 rgba(255, 255, 255, 0.2);
 }/*# sourceMappingURL=estilos.css.map */

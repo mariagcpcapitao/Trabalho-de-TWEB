@@ -36,7 +36,7 @@ a{
   color: inherit;
 }
 ul{
-  list-style: none;
+  list-style-type: none;
 }
 
 //header
@@ -286,12 +286,17 @@ footer {
     justify-content: space-between;
     align-items: center;
     width: 100%;
-    
 
     ul{
       display: flex;
       justify-content: space-between;
       width: 100%;
+
+      .titulo{
+        align-items: center;
+        box-shadow: 0 2px 0 rgba(255, 255, 255, 0.2);
+      }
+
       li{
         display:inline-block;
         margin:20px;
@@ -300,6 +305,7 @@ footer {
           display:flex;
           flex-direction: column;
           line-height: 0.4;
+          font-weight: bold;
         }
       }
     }
@@ -333,12 +339,12 @@ footer {
         object-fit: cover;
       }
     }
-
   }
 
   p{
     padding:15px;
-    font-size: $text-size;
+    font-size: small;
+    text-align: center;
     box-shadow: 0 -2px 0  rgba(255, 255, 255, 0.2),
                 0 2px 0 rgba(255, 255, 255, 0.2);
   }
