@@ -116,7 +116,27 @@ header nav .menu2 button {
   background-image: url(./img/rome-tripoli.jpg);
   background-size: cover;
 }
-.form-conteiner
+#container-capa
+{
+  width: 550px;
+  height: 180px;
+  background-color: #1770cf;
+  border-radius: 0px 0px 200px 0px;
+}
+.info-capa
+{
+  color: white;
+}
+.info-capa h1
+{
+  font-size:2em;
+}
+h3 img
+{
+  width: 1%;
+  height: 3%;
+}
+.form-container
 {
   background-color: #f5faff;
   width: 350px;
@@ -124,6 +144,10 @@ header nav .menu2 button {
   box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.1);
   padding: 15px;
   overflow: hidden;
+}
+#check-in, #manage-flights, #passangers-form
+{
+  display: none;
 }
 .best-offers-header h1,.best-offers-header h2
 {
@@ -246,7 +270,7 @@ header nav .menu2 button {
     width: 100%;
 }
 /*-------------------------*/
-#conteiner-offers
+#container-offers
 {
   background-color: rgba(208, 220, 229, 0.288);
 }
