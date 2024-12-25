@@ -25,6 +25,8 @@ header {
 header #information {
   background-color: orange;
   color: #333333;
+  overflow: hidden;
+  white-space: nowrap;
   font-size: medium;
   display: flex;
   justify-content: flex-start;
@@ -32,14 +34,35 @@ header #information {
   padding: 10px;
 }
 header #information h6 {
+  display: inline-block;
   font-size: 17px;
   margin-right: 25px;
   margin-left: 10px;
 }
-header #information a {
+header #information .container_rolante {
   display: flex;
-  align-content: center;
+  overflow: hidden;
+  white-space: nowrap;
+  flex: 1;
+}
+header #information .container_rolante .item {
+  display: flex;
+  align-items: center;
+  white-space: nowrap;
+  animation: rolarTexto 25s linear infinite;
   margin-right: 20px;
+}
+header #information .container_rolante .item a {
+  display: flex;
+  align-items: center;
+}
+@keyframes rolarTexto {
+  0% {
+    transform: translateX(250%);
+  }
+  100% {
+    transform: translateX(-200%);
+  }
 }
 header nav {
   background-color: #1770cf;
