@@ -32,6 +32,7 @@ header #information {
   justify-content: flex-start;
   align-items: center;
   padding: 10px;
+  color: black;
 }
 header #information h6 {
   display: inline-block;
@@ -63,6 +64,7 @@ header #information .container_rolante .item a {
   100% {
     transform: translateX(-200%);
   }
+  padding: 16px;
 }
 header nav {
   background-color: #1770cf;
@@ -74,6 +76,7 @@ header nav .menu1 {
   display: flex;
   align-items: center;
   justify-content: flex-start;
+  color: black;
 }
 header nav .menu1 .menu-img {
   height: 35px;
@@ -99,167 +102,224 @@ header nav .menu2 {
 header nav .menu2 button {
   background-color: transparent;
   border: none;
-  color: white;
-  margin-left: 20px;
-}
-header nav .menu2 img {
-  height: 25px;
-  width: 25px;
-}
-
-.capa {
+  color: white;}
+  header nav .menu2 img {
+    height: 25px;
+    width: 25px;}
+.capa
+{
+  width: 100%;
+  height:650px;
   background-image: url(./img/rome-tripoli.jpg);
+  background-size: cover;
 }
-
-.best-offers-grid {
-  display: flex;
-  justify-content: center;
-  margin: 0px;
-  gap: 0.5%;
-  font-family: "Montserrat", sans-serif;
+.form-conteiner
+{
+  background-color: #f5faff;
+  width: 350px;
+  border-radius: 8px;
+  box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.1);
+  padding: 15px;
+  overflow: hidden;
 }
-.best-offers-grid .italy, .best-offers-grid .europe, .best-offers-grid .world {
+.best-offers-header h1,.best-offers-header h2
+{
+  text-align: center;
+}
+.best-offers-grid
+{
+    display:flex;   
+    justify-content:center;
+    margin:0px;
+    gap: 0.5%;
+}
+.italy, .europe, .world
+{
   width: 380px;
 }
-
-.world li, .europe li, .italy li {
-  display: flex;
-  flex-direction: column;
-  flex-grow: 0;
-  background-color: white;
-  color: rgb(44, 44, 44);
-  width: 100%;
-  height: 100px;
-  padding: 10px;
-  border: lightgrey 1px solid;
-  border-radius: 6px;
-  box-shadow: 0px 2px 10px gray;
-  margin: 25px;
-  position: relative;
+.world li, .europe li, .italy li
+{
+    display: flex;
+    flex-direction: column;
+    flex-grow: 0;
+    background-color: white;
+    color: rgb(44, 44, 44);
+    width: 100%;
+    height:100px;
+    padding:10px;
+    border: lightgrey 1px solid;
+    border-radius: 6px;
+    box-shadow: 0px 2px 10px gray;
+    margin:25px;
+    position: relative;
 }
-
-.world li p, .europe li p, .italy li p {
+.world li p, .europe li p, .italy li p
+{
   position: absolute;
   bottom: 5px;
-  right: 10px;
+  right: 10px; 
   color: #0171CF;
   font-weight: 500;
   font-size: 22px;
 }
 
-.world li h1, .europe li h1, .italy li h1 {
+
+.world li h1, .europe li h1, .italy li h1
+{
   color: white;
   text-align: center;
   text-decoration: none;
   font-weight: 100;
 }
-
-.world li h2, .europe li h2, .italy li h2 {
+.world li h2, .europe li h2, .italy li h2
+{
   position: absolute;
-  bottom: 55px;
-  left: 10px;
+  bottom: 55px;;
+  left: 10px; 
   font-weight: 530;
-  font-size: 17px;
+  font-size:17px;
 }
-
-.world li h3, .europe li h3, .italy li h3 {
+.world li h3, .europe li h3, .italy li h3
+{
   position: absolute;
   bottom: 5px;
-  left: 10px;
+  left: 10px; 
   font-weight: 200;
   font-size: 15px;
 }
-
-.italy h1, .world h1, .europe h1 {
+.italy h1, .world h1, .europe h1
+{
   text-align: center;
 }
-
-.italy #catania, .world #new-york, .europe #athenes {
+ .italy #catania, .world #new-york, .europe #athenes
+{
   width: 100%;
   height: 250px;
 }
-
-#catania {
-  background-image: url(./img/catania.png);
-  background-repeat: no-repeat;
-  background-size: 100% 65%;
-}
-
-#athenes {
-  background-image: url(./img/athenes.jpg);
-  background-repeat: no-repeat;
-  background-size: 100% 65%;
-}
-
-#new-york {
-  background-image: url(./img/newyork.jpg);
-  background-repeat: no-repeat;
-  background-size: 100% 65%;
-}
-
-.suggestions-grid {
-  display: grid;
-  grid-template-columns: repeat(5, 175px);
-  gap: 5%;
-  justify-content: center;
-  margin: 0 auto;
-}
-
-.suggestion-options img {
-  border-radius: 150px 0 150px 0;
+.best-offers-grid button
+{
   width: 100%;
+  height: 40px;
+  border-radius: 6px;
+  border-color: #0171CF;
+  color: #1770cf;
+  background-color: white;
+  align-items: center;
+  margin: 25px;
+}
+#catania
+{
+    background-image: url(./img/catania.png);
+    background-repeat: no-repeat;
+    background-size: 100% 65%;
+}
+#athenes
+{
+    background-image: url(./img/athenes.jpg);
+    background-repeat: no-repeat;
+    background-size: 100% 65%;
+}
+#new-york
+{
+    background-image: url(./img/newyork.jpg);
+    background-repeat: no-repeat;
+    background-size: 100% 65%;
+}
+.suggestions-header
+{
+  text-align: center;
+}
+.suggestions-grid
+{
+    display: grid; 
+    grid-template-columns: repeat(5, 175px); 
+    gap: 5%; 
+    justify-content: center;
+    margin: 0 auto;
+}
+.suggestion-options img
+{
+    border-radius: 150px 0 150px 0;
+    width: 100%;
+}
+/*-------------------------*/
+#conteiner-offers
+{
+  background-color: rgba(208, 220, 229, 0.288);
+}
+.check-offers 
+{
+    padding: 40px 20px;
+    margin: 2% 15%;
+}
+.offers-header h1
+{
+    font-size: 2em;
+    color: #003366;
+    margin-bottom: 10px;
+}
+.offers-header p 
+{
+    font-size: 1em;
+    color: #666;
+    margin-bottom: 30px;
+}
+.offers-grid 
+{
+    display: grid;
+    grid-template-columns: repeat(4, 350px); 
+    justify-content: space-between;
+}
+.offer
+{
+  width: 95%;
+  margin: 0;
+}
+.offer img 
+{
+    width: 100%; 
+    height:75% ;
+}
+.offer a 
+{
+    font-size: 0.9em;
+    color: gray;
+    text-decoration: none;
+  }
+.our-partners
+{
+  margin:2% 15%
 }
 
-.check-offers {
-  background-color: #f5faff;
-  padding: 40px 20px;
-}
+.partners-grid 
+{
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(3, 400px);  
+    justify-content:space-between ;
 
-.offers-header h1 {
-  font-size: 2em;
-  color: #003366;
-  margin-bottom: 10px;
 }
-
-.offers-header p {
-  font-size: 1em;
-  color: #666;
-  margin-bottom: 30px;
+.partners img 
+{
+    width: 100%; 
+    height:60% ;
+    margin-bottom: 10px;
 }
-
-.offers-grid {
-  display: grid;
-  width: 100%;
-  grid-template-columns: repeat(4, 400px);
-  gap: 5%;
+#part-but
+{
+  display: flex;
   justify-content: center;
 }
-
-.offer img {
-  width: 90%;
-  height: 75%;
-  margin-bottom: 10px;
+.our-partners button
+{
+  width: 25%;
+  height: 40px;
+  border-radius: 6px;
+  border-color: #0171CF;
+  color: #1770cf;
+  background-color: white;
 }
-
-.offer a {
-  font-size: 0.9em;
-  color: gray;
-  text-decoration: none;
-}
-
-.partners-grid {
-  display: grid;
-  grid-template-columns: repeat(3, 400px);
-  gap: 1.5%;
-  justify-content: center;
-}
-
-.partners img {
-  width: 90%;
-  height: 75%;
-  margin-bottom: 10px;
-}
-
+/*PARTE FINAL DO SITE*/
 footer {
   background-color: #1770cf;
   color: white;
@@ -273,17 +333,8 @@ footer {
 footer .linha2 {
   display: flex;
   justify-content: space-between;
-  align-items: center;
+  align-items:center;
   width: 100%;
-}
-footer .linha2 ul {
-  display: flex;
-  justify-content: space-between;
-  width: 100%;
-}
-footer .linha2 ul .titulo {
-  align-items: center;
-  box-shadow: 0 2px 0 rgba(255, 255, 255, 0.2);
 }
 footer .linha2 ul li {
   display: inline-block;
@@ -293,7 +344,6 @@ footer .linha2 ul li ul {
   display: flex;
   flex-direction: column;
   line-height: 0.4;
-  font-weight: bold;
 }
 footer .linha3 {
   display: flex;
@@ -326,5 +376,6 @@ footer p {
   padding: 15px;
   font-size: small;
   text-align: center;
+  font-size: 1rem;
   box-shadow: 0 -2px 0 rgba(255, 255, 255, 0.2), 0 2px 0 rgba(255, 255, 255, 0.2);
 }/*# sourceMappingURL=estilos.css.map */
