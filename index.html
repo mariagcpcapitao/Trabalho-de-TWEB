@@ -143,7 +143,7 @@
             <button class="tab-button">CHECK-IN</button>
             <button class="tab-button">MANAGE FLIGHTS</button>  
         </div>
-        <form>
+        <form id="book">
         <select>
             <option vlue="1">Round trip</option>
             <option vlue="2">One way</option>
@@ -155,10 +155,64 @@
         <input id="to" type="text" placeholder="Destination">
         <p>Travel dates</p>
         <input id="departure-date" type="date" placeholder="Departure date"><input id="return-date" type="date" placeholder="Return date">
+        <button>passangers</button>
+        <input type="checkbox" name="points">Use volaire points<br>
+        <button id="search-button">Search</button>
+        </form>
+        <form id="check-in">
+            <input type="radio" name="Booking code">Booking code
+            <input type="radio" name="Frequent flyer">Frequent flyer
+            <p>Booking code or ticket no.</p>
+            <input type="text" name="" placeholder="I.E. YUH67G or 0551234567890"> 
+            <p>Last name</p>
+            <input type="text" name="" placeholder="Last name"> 
+            <button id="search-button">Search</button>
+        </form>
+        <form id="check-in">
+            <p>Reservation code/Ticket number</p>
+            <input type="text" name="" placeholder="ie. ESJ123"> 
+            <p>Last name</p>
+            <input type="text" name="" placeholder="Last name"> 
+            <button id="search-button">Search</button>
         </form>
     </div>
-   
 </section>
+<div id="passangers-form">
+    <form>
+        <h2>Add passenger</h2>
+        <p>Select passengers based on the age they will have at the time of travel</p>
+        <div>
+            <label>Adult</label>
+            <div>
+                <button class="minus">−</button>
+                <span class="count">1</span>
+                <button class="plus">+</button>
+            </div>
+        </div>
+        <div>
+            <label>Child</label>
+            <span>2-11 years old</span>
+            <div>
+                <button class="minus">−</button>
+                <span class="count">0</span>
+                <button class="plus">+</button>
+            </div>
+        </div>
+        <div>
+            <label>Infant</label>
+            <span>0-23 months</span>
+            <div>
+                <button class="minus">−</button>
+                <span class="count">0</span>
+                <button class="plus">+</button>
+            </div>
+        </div>
+        <p class="info">
+            Each child under the age of 2 must be accompanied by at least one parent or a responsible adult. Minors aged 2 to 13 on domestic flights and minors aged 2 to 14 on international and intercontinental flights must travel accompanied by an adult.
+        </p>
+        <button>Confirm</button>
+    </form>
+</div>
 <div class="best-offers-header">
     <h1>Best offers from 
         <select>
