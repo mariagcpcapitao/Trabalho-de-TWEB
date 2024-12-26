@@ -274,7 +274,7 @@ h3 img
   padding:2px 30px;
   justify-content: space-between;
 }
-#check-in, #manage-flights, #passangers-form
+#check-in, #manage-flights, #passangers-form, #estado-do-voo
 {
   display: none;
 }
