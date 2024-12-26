@@ -1,4 +1,3 @@
-@charset "UTF-8";
 * {
   margin: 0;
   padding: 0;
@@ -6,20 +5,18 @@
 }
 
 body {
-  font-family: 'Montserrat', sans-serif;
+  font-family: "Arial, sans-serif";
   color: #333333;
-  background-color:white;
+  background-color: #f5f5f5;
 }
+
 a {
   text-decoration: none;
-  color: inherit;}
-nav{
-    background-color: #0171CF;
-    color: white;
+  color: inherit;
 }
-ul 
-{
-  list-style: none;
+
+ul {
+  list-style-type: none;
 }
 
 header {
@@ -35,7 +32,6 @@ header #information {
   justify-content: flex-start;
   align-items: center;
   padding: 10px;
-  color: black;
 }
 header #information h6 {
   display: inline-block;
@@ -60,19 +56,6 @@ header #information .container_rolante .item a {
   display: flex;
   align-items: center;
 }
-@keyframes rolarTexto {
-  0% {
-    transform: translateX(250%);
-  }
-  100% {
-    transform: translateX(-200%);
-  }
-  padding: 16px;
-}
-.menu-options
-{
-  color: white;
-}
 header nav {
   background-color: #1770cf;
   padding: 25px;
@@ -83,7 +66,6 @@ header nav .menu1 {
   display: flex;
   align-items: center;
   justify-content: flex-start;
-  color: black;
 }
 header nav .menu1 .menu-img {
   height: 35px;
@@ -96,10 +78,31 @@ header nav .menu1 .menu-options {
   list-style: none;
   display: flex;
 }
+header nav .menu1 .menu-options a {
+  font-weight: bold;
+  position: relative;
+}
+header nav .menu1 .menu-options a::before {
+  content: "";
+  position: absolute;
+  width: 0;
+  height: 2px;
+  bottom: -5px;
+  left: 50%;
+  background-color: white;
+  transition: width 0.3s ease-in-out, left 0.3s ease-in-out;
+}
+header nav .menu1 .menu-options a:hover::before {
+  width: 100%;
+  left: 0;
+}
 header nav .menu1 .menu-options li {
   padding-left: 16px;
 }
-header nav .menu1 .menu-options li #submenu1, header nav .menu1 .menu-options li #submenu2, header nav .menu1 .menu-options li #submenu3, header nav .menu1 .menu-options li #submenu4 {
+header nav .menu1 .menu-options li #submenu1,
+header nav .menu1 .menu-options li #submenu2,
+header nav .menu1 .menu-options li #submenu3,
+header nav .menu1 .menu-options li #submenu4 {
   display: none;
 }
 header nav .menu2 {
@@ -109,20 +112,31 @@ header nav .menu2 {
 header nav .menu2 button {
   background-color: transparent;
   border: none;
-  color: white;}
-  header nav .menu2 img {
-    height: 25px;
-    width: 25px;}
-.capa
-{
+  color: white;
+  margin-left: 20px;
+}
+header nav .menu2 img {
+  height: 25px;
+  width: 25px;
+}
+
+@keyframes rolarTexto {
+  0% {
+    transform: translateX(250%);
+  }
+  100% {
+    transform: translateX(-200%);
+  }
+}
+.capa {
   width: 100%;
-  height:700px;
+  height: 700px;
   background-image: url(./img/rome-tripoli.jpg);
   background-size: cover;
   position: relative;
 }
-#container-capa
-{
+
+#container-capa {
   width: 550px;
   height: 200px;
   background-color: #1770cf;
@@ -132,64 +146,59 @@ header nav .menu2 button {
   position: absolute;
   bottom: 150px;
 }
-#search-div
-{
-  display: flex;
 
+#search-div {
+  display: flex;
   justify-content: center;
 }
-#search-button
-{
+
+#search-button {
   width: 100%;
   height: 50px;
   border-radius: 6px;
   border-color: #0171CF;
   color: white;
-  background-color:#1770cf;
+  background-color: #1770cf;
   position: relative;
 }
-.capa select
-{
+
+.capa select {
   border: none;
   background: none;
 }
-#capa2, #capa3, #capa4
-{
+
+#capa2, #capa3, #capa4 {
   display: none;
 }
-.info-capa
-{
+
+.info-capa {
   color: white;
-
 }
-.info-capa h1
-{
-  font-size:1.8em;
-  font-weight:600;
+
+.info-capa h1 {
+  font-size: 1.8em;
+  font-weight: 600;
   padding: 5px;
 }
-.info-capa h2
-{
-  font-size:1.3em;
+
+.info-capa h2 {
+  font-size: 1.3em;
   font-weight: normal;
   padding: 5px;
-
 }
-.info-capa h3
-{
-  font-size:1em;
+
+.info-capa h3 {
+  font-size: 1em;
   font-weight: normal;
   padding: 5px;
-
-
 }
-h3 img
-{
+
+h3 img {
   width: 3%;
   height: 8%;
 }
-.form-container
-{
+
+.form-container {
   background-color: #f5faff;
   width: 470px;
   height: 530px;
@@ -203,25 +212,25 @@ h3 img
   display: flex;
   flex-direction: column;
 }
-.form-container div
-{
+
+.form-container div {
   margin: 25px 10px;
 }
-.form-container p
-{
+
+.form-container p {
   margin: 3px;
 }
-.form-container input
-{
+
+.form-container input {
   border: none;
   background: none;
 }
-.form-container hr
-{
+
+.form-container hr {
   margin: 3px;
 }
-.select-capa
-{
+
+.select-capa {
   position: absolute;
   bottom: 0px;
   width: 1000px;
@@ -231,108 +240,106 @@ h3 img
   border-radius: 0px 10px 0px 0px;
   display: flex;
   justify-content: space-between;
+}
 
-}
-.select-capa button,.select-form button
-{
-  padding:10px;
+.select-capa button, .select-form button {
+  padding: 10px;
   border: none;
-  background: none
+  background: none;
 }
-.select-form
-{
+
+.select-form {
   display: grid;
   grid-template-columns: repeat(3, 100px);
-  padding:2px 30px;
+  padding: 2px 30px;
   justify-content: space-between;
 }
-#check-in, #manage-flights, #passangers-form
-{
+
+#check-in, #manage-flights, #passangers-form {
   display: none;
 }
-.best-offers-header h1,.best-offers-header h2
-{
+
+.best-offers-header h1, .best-offers-header h2 {
   text-align: center;
 }
-.best-offers-header select{
+
+.best-offers-header select {
   border: none;
   background: none;
   color: #0171CF;
-  font-size:30px;
+  font-size: 30px;
   font-weight: 600;
 }
-.best-offers-grid
-{
-    display:flex;   
-    justify-content:center;
-    margin:0px;
-    gap: 0.5%;
+
+.best-offers-grid {
+  display: flex;
+  justify-content: center;
+  margin: 0px;
+  gap: 0.5%;
 }
-.italy, .europe, .world
-{
+
+.italy, .europe, .world {
   width: 380px;
 }
-.world li, .europe li, .italy li
-{
-    display: flex;
-    flex-direction: column;
-    flex-grow: 0;
-    background-color: white;
-    color: rgb(44, 44, 44);
-    width: 100%;
-    height:100px;
-    padding:10px;
-    border: lightgrey 1px solid;
-    border-radius: 6px;
-    box-shadow: 0px 2px 10px gray;
-    margin:25px;
-    position: relative;
+
+.world li, .europe li, .italy li {
+  display: flex;
+  flex-direction: column;
+  flex-grow: 0;
+  background-color: white;
+  color: rgb(44, 44, 44);
+  width: 100%;
+  height: 100px;
+  padding: 10px;
+  border: lightgrey 1px solid;
+  border-radius: 6px;
+  box-shadow: 0px 2px 10px gray;
+  margin: 25px;
+  position: relative;
 }
-.world li p, .europe li p, .italy li p
-{
+
+.world li p, .europe li p, .italy li p {
   position: absolute;
   bottom: 5px;
-  right: 10px; 
+  right: 10px;
   color: #0171CF;
   font-weight: 500;
   font-size: 22px;
 }
 
-
-.world li h1, .europe li h1, .italy li h1
-{
+.world li h1, .europe li h1, .italy li h1 {
   color: white;
   text-align: center;
   text-decoration: none;
   font-weight: 100;
 }
-.world li h2, .europe li h2, .italy li h2
-{
+
+.world li h2, .europe li h2, .italy li h2 {
   position: absolute;
-  bottom: 55px;;
-  left: 10px; 
+  bottom: 55px;
+  left: 10px;
   font-weight: 530;
-  font-size:17px;
+  font-size: 17px;
 }
-.world li h3, .europe li h3, .italy li h3
-{
+
+.world li h3, .europe li h3, .italy li h3 {
   position: absolute;
   bottom: 5px;
-  left: 10px; 
+  left: 10px;
   font-weight: 200;
   font-size: 15px;
 }
-.italy h1, .world h1, .europe h1
-{
+
+.italy h1, .world h1, .europe h1 {
   text-align: center;
 }
- .italy #catania, .world #new-york, .europe #athenes
-{
+
+.italy #catania, .world #new-york, .europe #athenes {
   width: 100%;
   height: 250px;
 }
-.best-offers-grid button
-{
+
+.best-offers-grid button {
   width: 100%;
   height: 40px;
   border-radius: 6px;
@@ -342,111 +349,109 @@ h3 img
   align-items: center;
   margin: 25px;
 }
-#catania
-{
-    background-image: url(./img/catania.png);
-    background-repeat: no-repeat;
-    background-size: 100% 65%;
+
+#catania {
+  background-image: url(./img/catania.png);
+  background-repeat: no-repeat;
+  background-size: 100% 65%;
 }
-#athenes
-{
-    background-image: url(./img/athenes.jpg);
-    background-repeat: no-repeat;
-    background-size: 100% 65%;
+
+#athenes {
+  background-image: url(./img/athenes.jpg);
+  background-repeat: no-repeat;
+  background-size: 100% 65%;
 }
-#new-york
-{
-    background-image: url(./img/newyork.jpg);
-    background-repeat: no-repeat;
-    background-size: 100% 65%;
+
+#new-york {
+  background-image: url(./img/newyork.jpg);
+  background-repeat: no-repeat;
+  background-size: 100% 65%;
 }
-.suggestions-header
-{
+
+.suggestions-header {
   text-align: center;
 }
-.suggestions-grid
-{
-    display: grid; 
-    grid-template-columns: repeat(5, 175px); 
-    gap: 5%; 
-    justify-content: center;
-    margin: 0 auto;
+
+.suggestions-grid {
+  display: grid;
+  grid-template-columns: repeat(5, 175px);
+  gap: 5%;
+  justify-content: center;
+  margin: 0 auto;
 }
-.suggestion-options img
-{
-    border-radius: 150px 0 150px 0;
-    width: 100%;
+
+.suggestion-options img {
+  border-radius: 150px 0 150px 0;
+  width: 100%;
 }
+
 /*-------------------------*/
-#container-offers
-{
+#container-offers {
   background-color: rgba(208, 220, 229, 0.288);
 }
-.check-offers 
-{
-    padding: 40px 20px;
-    margin: 2% 15%;
+
+.check-offers {
+  padding: 40px 20px;
+  margin: 2% 15%;
 }
-.offers-header h1
-{
-    font-size: 2em;
-    color: #003366;
-    margin-bottom: 10px;
+
+.offers-header h1 {
+  font-size: 2em;
+  color: #003366;
+  margin-bottom: 10px;
 }
-.offers-header p 
-{
-    font-size: 1em;
-    color: #666;
-    margin-bottom: 30px;
+
+.offers-header p {
+  font-size: 1em;
+  color: #666;
+  margin-bottom: 30px;
 }
-.offers-grid 
-{
-    display: grid;
-    grid-template-columns: repeat(4, 350px); 
-    justify-content: space-between;
+
+.offers-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 350px);
+  justify-content: space-between;
 }
-.offer
-{
+
+.offer {
   width: 95%;
   margin: 0;
 }
-.offer img 
-{
-    width: 100%; 
-    height:75% ;
-}
-.offer a 
-{
-    font-size: 0.9em;
-    color: gray;
-    text-decoration: none;
-  }
-.our-partners
-{
-  margin:2% 15%
+
+.offer img {
+  width: 100%;
+  height: 75%;
 }
 
-.partners-grid 
-{
-    width: 100%;
-    display: grid;
-    grid-template-columns: repeat(3, 400px);  
-    justify-content:space-between ;
+.offer a {
+  font-size: 0.9em;
+  color: gray;
+  text-decoration: none;
+}
 
+.our-partners {
+  margin: 2% 15%;
 }
-.partners img 
-{
-    width: 100%; 
-    height:60% ;
-    margin-bottom: 10px;
+
+.partners-grid {
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(3, 400px);
+  justify-content: space-between;
 }
-#part-but
-{
+
+.partners img {
+  width: 100%;
+  height: 60%;
+  margin-bottom: 10px;
+}
+
+#part-but {
   display: flex;
   justify-content: center;
 }
-.our-partners button
-{
+
+.our-partners button {
   width: 25%;
   height: 40px;
   border-radius: 6px;
@@ -454,7 +459,7 @@ h3 img
   color: #1770cf;
   background-color: white;
 }
-/*PARTE FINAL DO SITE*/
+
 footer {
   background-color: #1770cf;
   color: white;
@@ -468,8 +473,17 @@ footer {
 footer .linha2 {
   display: flex;
   justify-content: space-between;
-  align-items:center;
+  align-items: center;
   width: 100%;
+}
+footer .linha2 ul {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
+footer .linha2 ul .titulo {
+  align-items: center;
+  box-shadow: 0 2px 0 rgba(255, 255, 255, 0.2);
 }
 footer .linha2 ul li {
   display: inline-block;
@@ -479,6 +493,7 @@ footer .linha2 ul li ul {
   display: flex;
   flex-direction: column;
   line-height: 0.4;
+  font-weight: bold;
 }
 footer .linha3 {
   display: flex;
@@ -511,6 +526,5 @@ footer p {
   padding: 15px;
   font-size: small;
   text-align: center;
-  font-size: 1rem;
   box-shadow: 0 -2px 0 rgba(255, 255, 255, 0.2), 0 2px 0 rgba(255, 255, 255, 0.2);
 }/*# sourceMappingURL=estilos.css.map */

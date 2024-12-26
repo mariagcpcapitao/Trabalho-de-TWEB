@@ -43,92 +43,113 @@ ul{
 header {
   color: $text-color1;
 
-  #information{
+  #information {
     background-color: orange;
     color: $text-color2;
-    overflow:hidden;
+    overflow: hidden;
     white-space: nowrap;
     font-size: medium;
-    display:flex;
+    display: flex;
     justify-content: flex-start;
     align-items: center;
-    padding:10px;
+    padding: 10px;
 
-    h6{
+    h6 {
       display: inline-block;
       font-size: 17px;
-      margin-right:25px;
-      margin-left:10px;
+      margin-right: 25px;
+      margin-left: 10px;
     }
-    .container_rolante { 
+
+    .container_rolante {
       display: flex;
-      overflow: hidden; 
-      white-space: nowrap; 
-      flex: 1; 
-    
-       .item {
-         display: flex;
-         align-items:center;
-         white-space: nowrap;
-         animation: rolarTexto 25s linear infinite; 
-         margin-right: 20px;
-           a{
-             display:flex;
-             align-items: center;
-            }
+      overflow: hidden;
+      white-space: nowrap;
+      flex: 1;
+
+      .item {
+        display: flex;
+        align-items: center;
+        white-space: nowrap;
+        animation: rolarTexto 25s linear infinite;
+        margin-right: 20px;
+
+        a {
+          display: flex;
+          align-items: center;
         }
-    
-      @keyframes rolarTexto { 
-         0% { transform: translateX(250%);} 
-         100% { transform: translateX(-200%);}
       }
     }
   }
-    
+
   nav {
     background-color: $primary-color;
     padding: 25px;
     display: flex;
     justify-content: space-between;
 
-    .menu1{
-      display:flex;
+    .menu1 {
+      display: flex;
       align-items: center;
       justify-content: flex-start;
 
-      .menu-img{
-        height:35px;
+      .menu-img {
+        height: 35px;
         width: fit-content;
         margin-left: 10px;
       }
 
-      .menu-options{
-        margin-left:20px;
+      .menu-options {
+        margin-left: 20px;
         list-style: none;
         display: flex;
 
-        li{
+        a{
+          font-weight: bold;
+          position: relative;
+
+          &::before { 
+            content: ''; 
+            position: absolute; 
+            width: 0; 
+            height: 2px;
+            bottom: -5px; 
+            left: 50%; 
+            background-color: white;
+            transition: width 0.3s ease-in-out, left 0.3s ease-in-out; 
+          }
+             
+          &:hover::before { 
+            width: 100%; 
+            left: 0;
+          }
+        }
+
+        li {
           padding-left: $padding-default;
 
-          #submenu1, #submenu2, #submenu3, #submenu4{
-            display:none;
+          #submenu1,
+          #submenu2,
+          #submenu3,
+          #submenu4 {
+            display: none;
           }
         }
       }
     }
-    .menu2{
-      display:flex;
+
+    .menu2 {
+      display: flex;
       justify-content: flex-end;
 
-    
-      button{
+      button {
         background-color: transparent;
-        border:none;
-        color:$text-color1;
+        border: none;
+        color: $text-color1;
         margin-left: 20px;
       }
 
-      img{
+      img {
         height: 25px;
         width: 25px;
       }
@@ -136,6 +157,11 @@ header {
   }
 }
 
+//rolagem de texto animaçao
+@keyframes rolarTexto { 
+  0% { transform: translateX(250%);} 
+  100% { transform: translateX(-200%);}
+}
 
 
 //Corpo
