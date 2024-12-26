@@ -116,10 +116,17 @@ header nav .menu2 {
   justify-content: flex-end;
 }
 header nav .menu2 button {
+  display: flex;
+  align-items: center;
+  font-weight: bold;
   background-color: transparent;
   border: none;
   color: white;
   margin-left: 20px;
+}
+header nav .menu2 #log-in {
+  padding-left: 40px;
+  padding-right: 40px;
 }
 header nav .menu2 img {
   height: 25px;

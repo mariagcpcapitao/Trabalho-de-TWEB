@@ -150,10 +150,18 @@ header {
       justify-content: flex-end;
 
       button {
+        display:flex;
+        align-items: center;
+        font-weight: bold;
         background-color: transparent;
         border: none;
         color: $text-color1;
         margin-left: 20px;
+      }
+      
+      #log-in{
+        padding-left: 40px;
+        padding-right:40px;
       }
 
       img {
