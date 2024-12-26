@@ -5,10 +5,10 @@
 $primary-color: #1770cf;
 $text-color1: white;
 $text-color2: #333333;
-$background-color: #f5f5f5;
+$background-color: white;
 
     // Fontes
-$font-family: 'Arial, sans-serif';
+$font-family: 'Montesserrat', sans-serif;
 $heading-size: 1.5rem;
 $text-size: 1rem;
 
@@ -29,6 +29,7 @@ body {
   font-family: $font-family;
   color: $text-color2;
   background-color: $background-color;
+  padding-top: 130px;
 }
 
 a{
@@ -42,6 +43,10 @@ ul{
 //header
 header {
   color: $text-color1;
+  position: fixed;
+  top:0;
+  width: 100%;
+  z-index: 1000;
 
   #information {
     background-color: orange;
