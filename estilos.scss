@@ -44,6 +44,7 @@ ul{
 header {
   color: $text-color1;
   position: fixed;
+  cursor: pointer;
   top:0;
   width: 100%;
   z-index: 1000;
@@ -130,16 +131,28 @@ header {
             left: 0;
           }
         }
-
-
         li {
           padding-left: $padding-default;
+          position:relative;
 
-          #submenu1,
-          #submenu2,
-          #submenu3,
-          #submenu4 {
-            display: none;
+          a:hover + #submenu1,
+          a:hover + #submenu2,
+          a:hover + #submenu3,
+          a:hover + #submenu4,
+          #submenu1:hover,
+          #submenu2:hover,
+          #submenu3:hover,
+          #submenu4:hover{
+            display:block;
+          }
+          #submenu1,#submenu2, #submenu3, #submenu4{
+            display:none;
+            position: absolute;
+            margin-top:15px;
+            padding:20px;
+            background-color: $background-color;
+            color:$text-color2;
+            border-radius: 10px;
           }
         }
       }
@@ -157,6 +170,11 @@ header {
         border: none;
         color: $text-color1;
         margin-left: 20px;
+        font-size: $text-size;
+
+        img{
+          margin-right:5px;
+        }
       }
       
       #log-in{
