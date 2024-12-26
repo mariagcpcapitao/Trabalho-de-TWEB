@@ -177,6 +177,7 @@ header {
   background-image: url(./img/rome-tripoli.jpg);
   background-size: cover;
   position: relative;
+  margin: 0 0 60px 0;
 }
 #container-capa
 {
@@ -336,9 +337,10 @@ h3 img
 {
   display: none;
 }
-.best-offers-header h1,.best-offers-header h2
+.best-offers-header h1
 {
   text-align: center;
+  margin: 20px;
 }
 .best-offers-header select{
   border: none;
@@ -451,6 +453,7 @@ h3 img
 .suggestions-header
 {
   text-align: center;
+  padding: 30px;
 }
 .suggestions-grid
 {
