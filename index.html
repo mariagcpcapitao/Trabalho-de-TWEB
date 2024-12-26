@@ -4,7 +4,6 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="estilos.css" rel="stylesheet"></link>
-    <script src="logica.js"></script>
     <title>TrabalhoTWEB</title>
 </head>
 <body>
@@ -143,26 +142,40 @@
 
 <section class="capa">
     <div class="form-container">
-        <div>
-            <button class="tab-button active">BOOK</button>
-            <button class="tab-button">CHECK-IN</button>
-            <button class="tab-button">MANAGE FLIGHTS</button>  
+        <div class="select-form">
+            <button>BOOK</button>
+            <button>CHECK-IN</button>
+            <button>MANAGE FLIGHTS</button>  
         </div>
         <form id="book">
-        <select>
-            <option vlue="1">Round trip</option>
-            <option vlue="2">One way</option>
-            <option vlue="3">Multi-leg</option>
-        </select>
-        <p>From</p>
-        <input id="from" type="text" placeholder="Roma (FCO)">
-        <p>To</p>
-        <input id="to" type="text" placeholder="Destination">
-        <p>Travel dates</p>
-        <input id="departure-date" type="date" placeholder="Departure date"><input id="return-date" type="date" placeholder="Return date">
-        <button>passangers</button>
-        <input type="checkbox" name="points">Use volaire points<br>
-        <button id="search-button">Search</button>
+        <div>
+                <select>
+                    <option vlue="1">Round trip</option>
+                    <option vlue="2">One way</option>
+                    <option vlue="3">Multi-leg</option>
+                </select>      
+        </div>
+        <div>
+            <p>From</p>
+            <input id="from" type="text" placeholder="Roma (FCO)"> 
+            <hr/>     
+        </div>
+        <div>
+            <p>To</p>
+            <input id="to" type="text" placeholder="Destination">
+            <hr/>
+        </div>
+        <div>
+            <p>Travel dates</p>
+            <input id="departure-date" type="date" placeholder="Departure date"><input id="return-date" type="date" placeholder="Return date">
+            <hr/>
+        </div>
+        <div>
+            <button>passangers</button>
+            <hr/>
+        </div>
+        <div><input type="checkbox" name="points">Use volaire points<br></div>
+        <div id="search-div"><button id="search-button">Search</button></div>
         </form>
         <form id="check-in">
             <input type="radio" name="Booking code">Booking code
@@ -185,23 +198,29 @@
         <div id="capa1" class="info-capa">
             <h1>New direct flight Rome-Tripoli</h1>
             <h2>From 12 January</h2>
-            <h3>Find out more <img src="img/seta2.png"></h3>
+            <h3>Find out more <img src="img/seta-direita.png"></h3>
         </div>
         <div id="capa2" class="info-capa">
             <h1>Fly from Dubai to Rome</h1>
             <h2>Starting from &euro;483 r/t</h2>
-            <h3>Purchase now <img src="img/seta2.png"></h3>
+            <h3>Purchase now <img src="img/seta-direita.png"></h3>
         </div>
         <div id="capa3" class="info-capa">
             <h1>Experience the Magic of the Venice Carnival</h1>
             <h2>Book your flight to Italy</h2>
-            <h3>Find out more <img src="img/seta2.png"></h3>
+            <h3>Find out more <img src="img/seta-direita.png"></h3>
         </div>
         <div id="capa4" class="info-capa">
             <h1>Business Class Deals</h1>
             <h2>Italy and Europe</h2>
-            <h3>From Accra and Dakar <img src="img/seta2.png"></h3>
+            <h3>From Accra and Dakar <img src="img/seta-direita.png"></h3>
         </div>
+    </div>
+    <div class="select-capa">
+        <div><button>New direct flight Rome-Tripoli</button></div>
+        <div><button>Fly from Dubai to Rome</button></div>
+        <div><button>Experience the Magic of the Venice Carnival</button></div>
+        <div><button>Business Class Deals</button></div> 
     </div>
 </section>
 <div id="passangers-form">
@@ -553,6 +572,6 @@
 
 </footer>   
 
-
+<script src="logica.js"></script>
 </body>
 </html>

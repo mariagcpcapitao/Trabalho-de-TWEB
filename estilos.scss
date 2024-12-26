@@ -142,20 +142,136 @@ header {
 .capa
 {
   width: 100%;
-  height:650px;
+  height:700px;
   background-image: url(./img/rome-tripoli.jpg);
   background-size: cover;
+  position: relative;
 }
-.form-conteiner
+#container-capa
+{
+  width: 550px;
+  height: 200px;
+  background-color: #1770cf;
+  border-radius: 0px 0px 200px 0px;
+  padding: 30px 80px 30px 30px;
+  position: relative;
+  position: absolute;
+  bottom: 150px;
+}
+#search-div
+{
+  display: flex;
+
+  justify-content: center;
+}
+#search-button
+{
+  width: 100%;
+  height: 50px;
+  border-radius: 6px;
+  border-color: #0171CF;
+  color: white;
+  background-color:#1770cf;
+  position: relative;
+}
+.capa select
+{
+  border: none;
+  background: none;
+}
+#capa2, #capa3, #capa4
+{
+  display: none;
+}
+.info-capa
+{
+  color: white;
+
+}
+.info-capa h1
+{
+  font-size:1.8em;
+  font-weight:600;
+  padding: 5px;
+}
+.info-capa h2
+{
+  font-size:1.3em;
+  font-weight: normal;
+  padding: 5px;
+
+}
+.info-capa h3
+{
+  font-size:1em;
+  font-weight: normal;
+  padding: 5px;
+
+
+}
+h3 img
+{
+  width: 3%;
+  height: 8%;
+}
+.form-container
 {
   background-color: #f5faff;
-  width: 350px;
+  width: 470px;
+  height: 530px;
   border-radius: 8px;
   box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.1);
-  padding: 15px;
+  padding: 12px;
   overflow: hidden;
+  position: absolute;
+  right: 100px;
+  bottom: 100px;
+  display: flex;
+  flex-direction: column;
 }
+.form-container div
+{
+  margin: 25px 10px;
+}
+.form-container p
+{
+  margin: 3px;
+}
+.form-container input
+{
+  border: none;
+  background: none;
+}
+.form-container hr
+{
+  margin: 3px;
+}
+.select-capa
+{
+  position: absolute;
+  bottom: 0px;
+  width: 1000px;
+  height: 40px;
+  padding: 0px 60px 0px 60px;
+  background-color: white;
+  border-radius: 0px 10px 0px 0px;
+  display: flex;
+  justify-content: space-between;
 
+}
+.select-capa button,.select-form button
+{
+  padding:10px;
+  border: none;
+  background: none
+}
+.select-form
+{
+  display: grid;
+  grid-template-columns: repeat(3, 100px);
+  padding:2px 30px;
+  justify-content: space-between;
+}
 #check-in, #manage-flights, #passangers-form
 {
   display: none;
@@ -163,6 +279,13 @@ header {
 .best-offers-header h1,.best-offers-header h2
 {
   text-align: center;
+}
+.best-offers-header select{
+  border: none;
+  background: none;
+  color: #0171CF;
+  font-size:30px;
+  font-weight: 600;
 }
 .best-offers-grid
 {
@@ -281,7 +404,7 @@ header {
     width: 100%;
 }
 /*-------------------------*/
-#conteiner-offers
+#container-offers
 {
   background-color: rgba(208, 220, 229, 0.288);
 }
