@@ -23,6 +23,7 @@ ul {
 header {
   color: white;
   position: fixed;
+  cursor: pointer;
   top: 0;
   width: 100%;
   z-index: 1000;
@@ -66,6 +67,7 @@ header nav {
   padding: 25px;
   display: flex;
   justify-content: space-between;
+  z-index: 1001;
 }
 header nav .menu1 {
   display: flex;
@@ -103,22 +105,47 @@ header nav .menu1 .menu-options a:hover::before {
 }
 header nav .menu1 .menu-options li {
   padding-left: 16px;
+  position: relative;
 }
-header nav .menu1 .menu-options li #submenu1,
-header nav .menu1 .menu-options li #submenu2,
-header nav .menu1 .menu-options li #submenu3,
-header nav .menu1 .menu-options li #submenu4 {
+header nav .menu1 .menu-options li a:hover + #submenu1,
+header nav .menu1 .menu-options li a:hover + #submenu2,
+header nav .menu1 .menu-options li a:hover + #submenu3,
+header nav .menu1 .menu-options li a:hover + #submenu4,
+header nav .menu1 .menu-options li #submenu1:hover,
+header nav .menu1 .menu-options li #submenu2:hover,
+header nav .menu1 .menu-options li #submenu3:hover,
+header nav .menu1 .menu-options li #submenu4:hover {
+  display: block;
+}
+header nav .menu1 .menu-options li #submenu1, header nav .menu1 .menu-options li #submenu2, header nav .menu1 .menu-options li #submenu3, header nav .menu1 .menu-options li #submenu4 {
   display: none;
+  position: absolute;
+  margin-top: 15px;
+  padding: 20px;
+  background-color: white;
+  color: #333333;
+  border-radius: 10px;
 }
 header nav .menu2 {
   display: flex;
   justify-content: flex-end;
 }
 header nav .menu2 button {
+  display: flex;
+  align-items: center;
+  font-weight: bold;
   background-color: transparent;
   border: none;
   color: white;
   margin-left: 20px;
+  font-size: 1rem;
+}
+header nav .menu2 button img {
+  margin-right: 5px;
+}
+header nav .menu2 #log-in {
+  padding-left: 40px;
+  padding-right: 40px;
 }
 header nav .menu2 img {
   height: 25px;
