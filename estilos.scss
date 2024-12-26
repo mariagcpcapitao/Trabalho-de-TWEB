@@ -92,6 +92,7 @@ header {
     padding: 25px;
     display: flex;
     justify-content: space-between;
+    z-index: 1001;
 
     .menu1 {
       display: flex;
@@ -112,7 +113,7 @@ header {
         a{
           font-weight: bold;
           position: relative;
-
+          
           &::before { 
             content: ''; 
             position: absolute; 
@@ -129,6 +130,7 @@ header {
             left: 0;
           }
         }
+
 
         li {
           padding-left: $padding-default;
