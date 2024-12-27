@@ -117,7 +117,7 @@ header nav .menu1 .menu-options li #submenu3:hover,
 header nav .menu1 .menu-options li #submenu4:hover {
   display: block;
 }
-header nav .menu1 .menu-options li #submenu1, header nav .menu1 .menu-options li #submenu2, header nav .menu1 .menu-options li #submenu3, header nav .menu1 .menu-options li #submenu4 {
+header nav .menu1 .menu-options li #submenu1 {
   display: none;
   position: absolute;
   margin-top: 15px;
@@ -125,6 +125,173 @@ header nav .menu1 .menu-options li #submenu1, header nav .menu1 .menu-options li
   background-color: white;
   color: #333333;
   border-radius: 10px;
+}
+header nav .menu1 .menu-options li #submenu1 div {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 20px;
+  grid-template-areas: "book manage extra partner";
+}
+header nav .menu1 .menu-options li #submenu1 div li {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+header nav .menu1 .menu-options li #submenu1 div li #titulo {
+  font-size: smaller;
+  margin: 3px;
+  padding: 5px;
+  border-bottom: 1px solid rgba(128, 128, 128, 0.5);
+}
+header nav .menu1 .menu-options li #submenu1 div li #book {
+  grid-area: book;
+}
+header nav .menu1 .menu-options li #submenu1 div li #manage {
+  grid-area: manage;
+}
+header nav .menu1 .menu-options li #submenu1 div li #extra {
+  grid-area: extra;
+}
+header nav .menu1 .menu-options li #submenu1 div li #partner {
+  grid-area: partner;
+}
+header nav .menu1 .menu-options li #submenu1 div li a {
+  text-decoration: none;
+  display: block;
+  padding: 10px;
+  white-space: nowrap;
+}
+header nav .menu1 .menu-options li #submenu1 div li a:hover {
+  color: #1770cf;
+}
+header nav .menu1 .menu-options li #submenu2 {
+  display: none;
+  position: absolute;
+  margin-top: 15px;
+  padding: 20px;
+  background-color: white;
+  color: #333333;
+  border-radius: 10px;
+}
+header nav .menu1 .menu-options li #submenu2 div {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+  grid-template-areas: "offers productsandservices agreementsandpromotions";
+}
+header nav .menu1 .menu-options li #submenu2 div li {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+header nav .menu1 .menu-options li #submenu2 div li #titulo {
+  font-size: smaller;
+  margin: 3px;
+  padding: 5px;
+  border-bottom: 1px solid rgba(128, 128, 128, 0.5);
+  white-space: nowrap;
+}
+header nav .menu1 .menu-options li #submenu2 div li #offers {
+  grid-area: offers;
+}
+header nav .menu1 .menu-options li #submenu2 div li #productsandservices {
+  grid-area: productsandservices;
+}
+header nav .menu1 .menu-options li #submenu2 div li #agreementsandpromotions {
+  grid-area: agreementsandpromotions;
+}
+header nav .menu1 .menu-options li #submenu2 div li a {
+  text-decoration: none;
+  display: block;
+  padding: 10px;
+  white-space: nowrap;
+}
+header nav .menu1 .menu-options li #submenu2 div li a:hover {
+  color: #1770cf;
+}
+header nav .menu1 .menu-options li #submenu3 {
+  display: none;
+  position: absolute;
+  margin-top: 15px;
+  padding: 20px;
+  background-color: white;
+  color: #333333;
+  border-radius: 10px;
+}
+header nav .menu1 .menu-options li #submenu3 div {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 20px;
+  grid-template-areas: "assistanceandsupport information";
+}
+header nav .menu1 .menu-options li #submenu3 div li {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+header nav .menu1 .menu-options li #submenu3 div li #titulo {
+  font-size: smaller;
+  margin: 3px;
+  padding: 5px;
+  border-bottom: 1px solid rgba(128, 128, 128, 0.5);
+  white-space: nowrap;
+}
+header nav .menu1 .menu-options li #submenu3 div li #assisandsup {
+  grid-area: assistanceandsupport;
+}
+header nav .menu1 .menu-options li #submenu3 div li #info {
+  grid-area: information;
+}
+header nav .menu1 .menu-options li #submenu3 div li a {
+  text-decoration: none;
+  display: block;
+  padding: 10px;
+  white-space: nowrap;
+}
+header nav .menu1 .menu-options li #submenu3 div li a:hover {
+  color: #1770cf;
+}
+header nav .menu1 .menu-options li #submenu4 {
+  display: none;
+  position: absolute;
+  margin-top: 15px;
+  padding: 20px;
+  background-color: white;
+  color: #333333;
+  border-radius: 10px;
+}
+header nav .menu1 .menu-options li #submenu4 div {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 20px;
+  grid-template-areas: "information offersandbenefits";
+}
+header nav .menu1 .menu-options li #submenu4 div li {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+header nav .menu1 .menu-options li #submenu4 div li #titulo {
+  font-size: smaller;
+  margin: 3px;
+  padding: 5px;
+  border-bottom: 1px solid rgba(128, 128, 128, 0.5);
+  white-space: nowrap;
+}
+header nav .menu1 .menu-options li #submenu4 div li #info {
+  grid-area: information;
+}
+header nav .menu1 .menu-options li #submenu4 div li #offersandbenefits {
+  grid-area: offersandbenefits;
+}
+header nav .menu1 .menu-options li #submenu4 div li a {
+  text-decoration: none;
+  display: block;
+  padding: 10px;
+  white-space: nowrap;
+}
+header nav .menu1 .menu-options li #submenu4 div li a:hover {
+  color: #1770cf;
 }
 header nav .menu2 {
   display: flex;

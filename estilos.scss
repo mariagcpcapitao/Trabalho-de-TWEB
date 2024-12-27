@@ -132,6 +132,7 @@ header {
             left: 0;
           }
         }
+
         li {
           padding-left: $padding-default;
           position:relative;
@@ -146,7 +147,8 @@ header {
           #submenu4:hover{
             display:block;
           }
-          #submenu1,#submenu2, #submenu3, #submenu4{
+
+          #submenu1{
             display:none;
             position: absolute;
             margin-top:15px;
@@ -154,6 +156,198 @@ header {
             background-color: $background-color;
             color:$text-color2;
             border-radius: 10px;
+
+            div{
+              display: grid; 
+              grid-template-columns: repeat(4, 1fr); 
+              gap: 20px;  
+              grid-template-areas: "book manage extra partner";
+
+              li{ 
+                list-style-type: none; 
+                margin:0;
+                padding:0;
+                
+                #titulo{
+                  font-size: smaller;
+                  margin:3px;
+                  padding:5px;
+                  border-bottom: 1px solid rgba(128, 128, 128, 0.5);
+                }
+
+                #book { 
+                  grid-area: book; 
+                } 
+                #manage { 
+                  grid-area: manage; 
+                } 
+                #extra { 
+                  grid-area: extra; 
+                } 
+                #partner { 
+                  grid-area: partner; 
+                } 
+                a{ 
+                  text-decoration: none; 
+                  display: block; 
+                  padding: 10px;
+                  white-space: nowrap;
+
+                  &:hover{
+                    color:$primary-color
+                  }
+                } 
+              }
+            }
+          }
+
+          #submenu2{
+            display:none;
+            position: absolute;
+            margin-top:15px;
+            padding:20px;
+            background-color: $background-color;
+            color:$text-color2;
+            border-radius: 10px;
+
+            div{
+              display: grid; 
+              grid-template-columns: repeat(3, 1fr); 
+              gap: 20px;  
+              grid-template-areas: "offers productsandservices agreementsandpromotions";
+
+              li{ 
+                list-style-type: none; 
+                margin:0;
+                padding:0;
+                
+                #titulo{
+                  font-size: smaller;
+                  margin:3px;
+                  padding:5px;
+                  border-bottom: 1px solid rgba(128, 128, 128, 0.5);
+                  white-space: nowrap;
+                }
+
+                #offers { 
+                  grid-area: offers; 
+                } 
+                #productsandservices { 
+                  grid-area: productsandservices; 
+                } 
+                #agreementsandpromotions { 
+                  grid-area: agreementsandpromotions; 
+                } 
+                a{ 
+                  text-decoration: none; 
+                  display: block; 
+                  padding: 10px;
+                  white-space: nowrap;
+
+                  &:hover{
+                    color:$primary-color
+                  }
+                } 
+              }
+            }
+          }
+          #submenu3{
+            display:none;
+            position: absolute;
+            margin-top:15px;
+            padding:20px;
+            background-color: $background-color;
+            color:$text-color2;
+            border-radius: 10px;
+
+            div{
+              display: grid; 
+              grid-template-columns: repeat(2, 1fr); 
+              gap: 20px;  
+              grid-template-areas: "assistanceandsupport information";
+
+              li{ 
+                list-style-type: none; 
+                margin:0;
+                padding:0;
+                
+                #titulo{
+                  font-size: smaller;
+                  margin:3px;
+                  padding:5px;
+                  border-bottom: 1px solid rgba(128, 128, 128, 0.5);
+                  white-space: nowrap;
+                }
+
+                #assisandsup { 
+                  grid-area: assistanceandsupport; 
+                } 
+                
+                #info { 
+                  grid-area: information; 
+                } 
+
+                a{ 
+                  text-decoration: none; 
+                  display: block; 
+                  padding: 10px;
+                  white-space: nowrap;
+
+                  &:hover{
+                    color:$primary-color
+                  }
+                } 
+              }
+            }
+          }
+          #submenu4{
+            display:none;
+            position: absolute;
+            margin-top:15px;
+            padding:20px;
+            background-color: $background-color;
+            color:$text-color2;
+            border-radius: 10px;
+
+            div{
+              display: grid; 
+              grid-template-columns: repeat(2, 1fr); 
+              gap: 20px;  
+              grid-template-areas: "information offersandbenefits";
+
+              li{ 
+                list-style-type: none; 
+                margin:0;
+                padding:0;
+                
+                #titulo{
+                  font-size: smaller;
+                  margin:3px;
+                  padding:5px;
+                  border-bottom: 1px solid rgba(128, 128, 128, 0.5);
+                  white-space: nowrap;
+                }
+                
+                #info { 
+                  grid-area: information; 
+                } 
+
+                #offersandbenefits{
+                  grid-area: offersandbenefits;
+                }
+
+                a{ 
+                  text-decoration: none; 
+                  display: block; 
+                  padding: 10px;
+                  white-space: nowrap;
+
+                  &:hover{
+                    color:$primary-color
+                  }
+                } 
+              }
+            }
           }
         }
       }
