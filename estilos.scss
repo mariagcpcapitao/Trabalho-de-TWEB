@@ -198,6 +198,9 @@ header {
 
 
 //Corpo
+
+
+//Capa
 .capa
 {
   width: 100%;
@@ -211,7 +214,7 @@ header {
 {
   width: 550px;
   height: 200px;
-  background-color: #1770cf;
+  background-color:$primary-color;
   border-radius: 0px 0px 200px 0px;
   padding: 30px 80px 30px 30px;
   position: relative;
@@ -230,9 +233,9 @@ header {
   width: 100%;
   height: 50px;
   border-radius: 6px;
-  border-color: #0171CF;
+  border-color: $primary-color;
   color: white;
-  background-color:#1770cf;
+  background-color:$primary-color;
   position: relative;
 }
 .capa select
@@ -269,10 +272,6 @@ header {
   font-size:1em;
   font-weight: normal;
   padding: 5px;
-
-
-
-
 }
 h3 img
 {
@@ -311,6 +310,40 @@ h3 img
 {
   margin: 3px;
 }
+#points 
+{
+  position: relative;
+}
+
+.info-text 
+{
+  visibility: hidden;
+  width: 160px;
+  background-color: #0B2340;
+  color: #fff;
+  text-align: left;
+  font-size: 0.75em;
+  padding: 10px;
+  border-radius: 5px;
+  position: absolute;
+  z-index: 1;
+  bottom: 20px;
+  left: 65px;
+}
+
+.info-icon 
+{
+  width: 15px;
+  cursor: pointer;
+}
+
+.info-icon:hover + .info-text 
+{
+  visibility: visible;
+  opacity: 1;
+}
+
+
 #passangers
 {
   width: 100%;
@@ -326,9 +359,7 @@ h3 img
   right: 10px;
   width: 10px;
 }
-#points img{
-  width: 15px;
-}
+
 .select-capa
 {
   position: absolute;
@@ -368,6 +399,10 @@ h3 img
 {
   display: none;
 }
+
+//Fim capa
+
+//Best offers
 .best-offers-header h1
 {
   text-align: center;
@@ -376,7 +411,7 @@ h3 img
 .best-offers-header select{
   border: none;
   background: none;
-  color: #0171CF;
+  color: $primary-color;
   font-size:30px;
   font-weight: 600;
 }
@@ -412,14 +447,10 @@ h3 img
   position: absolute;
   bottom: 5px;
   right: 10px;
-  color: #0171CF;
+  color: $primary-color;
   font-weight: 500;
   font-size: 22px;
 }
-
-
-
-
 .world li h1, .europe li h1, .italy li h1
 {
   color: white;
@@ -457,8 +488,8 @@ h3 img
   width: 100%;
   height: 40px;
   border-radius: 6px;
-  border-color: #0171CF;
-  color: #1770cf;
+  border-color: $primary-color;
+  color: $primary-color;
   background-color: white;
   align-items: center;
   margin: 25px;
@@ -481,6 +512,10 @@ h3 img
     background-repeat: no-repeat;
     background-size: 100% 65%;
 }
+
+//Fim best offers 
+
+//Sugestions
 .suggestions-header
 {
   text-align: center;
@@ -499,7 +534,9 @@ h3 img
     border-radius: 150px 0 150px 0;
     width: 100%;
 }
-/*-------------------------*/
+//Fim suggestions
+
+//Offers
 #container-offers
 {
   background-color: rgba(208, 220, 229, 0.288);
@@ -543,20 +580,19 @@ h3 img
     color: gray;
     text-decoration: none;
   }
+//Fim offers
+
+//Partners
 .our-partners
 {
   margin:2% 15%
 }
-
-
 .partners-grid
 {
     width: 100%;
     display: grid;
     grid-template-columns: repeat(3, 400px);  
     justify-content:space-between ;
-
-
 }
 .partners img
 {
@@ -574,11 +610,11 @@ h3 img
   width: 25%;
   height: 40px;
   border-radius: 6px;
-  border-color: #0171CF;
-  color: #1770cf;
+  border-color: $primary-color;
+  color: $primary-color;
   background-color: white;
 }
-
+//Fim partners 
 
 //Footer
 footer {

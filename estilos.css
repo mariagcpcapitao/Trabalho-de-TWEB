@@ -189,7 +189,7 @@ header nav .menu2 img {
   width: 100%;
   height: 50px;
   border-radius: 6px;
-  border-color: #0171CF;
+  border-color: #1770cf;
   color: white;
   background-color: #1770cf;
   position: relative;
@@ -233,6 +233,8 @@ h3 img {
 
 .form-container {
   background-color: #f5faff;
+  width: 470px;
+  height: 530px;
   border-radius: 8px;
   box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.1);
   padding: 12px;
@@ -246,7 +248,6 @@ h3 img {
 
 .form-container div {
   margin: 22px 10px;
-  width: 450px;
 }
 
 .form-container p {
@@ -262,6 +263,35 @@ h3 img {
   margin: 3px;
 }
 
+#points {
+  position: relative;
+}
+
+.info-text {
+  visibility: hidden;
+  width: 160px;
+  background-color: #0B2340;
+  color: #fff;
+  text-align: left;
+  font-size: 0.75em;
+  padding: 10px;
+  border-radius: 5px;
+  position: absolute;
+  z-index: 1;
+  bottom: 20px;
+  left: 65px;
+}
+
+.info-icon {
+  width: 15px;
+  cursor: pointer;
+}
+
+.info-icon:hover + .info-text {
+  visibility: visible;
+  opacity: 1;
+}
+
 #passangers {
   width: 100%;
   border: none;
@@ -275,9 +305,6 @@ h3 img {
   position: absolute;
   right: 10px;
   width: 10px;
-}
-#points img{
-  width: 15px;
 }
 
 .select-capa {
@@ -327,7 +354,7 @@ h3 img {
 .best-offers-header select {
   border: none;
   background: none;
-  color: #0171CF;
+  color: #1770cf;
   font-size: 30px;
   font-weight: 600;
 }
@@ -363,7 +390,7 @@ h3 img {
   position: absolute;
   bottom: 5px;
   right: 10px;
-  color: #0171CF;
+  color: #1770cf;
   font-weight: 500;
   font-size: 22px;
 }
@@ -404,7 +431,7 @@ h3 img {
   width: 100%;
   height: 40px;
   border-radius: 6px;
-  border-color: #0171CF;
+  border-color: #1770cf;
   color: #1770cf;
   background-color: white;
   align-items: center;
@@ -447,7 +474,6 @@ h3 img {
   width: 100%;
 }
 
-/*-------------------------*/
 #container-offers {
   background-color: rgba(208, 220, 229, 0.288);
 }
@@ -517,7 +543,7 @@ h3 img {
   width: 25%;
   height: 40px;
   border-radius: 6px;
-  border-color: #0171CF;
+  border-color: #1770cf;
   color: #1770cf;
   background-color: white;
 }
