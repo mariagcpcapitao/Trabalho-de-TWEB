@@ -251,8 +251,6 @@ header {
 .info-capa
 {
   color: white;
-
-
 }
 .info-capa h1
 {
@@ -265,8 +263,6 @@ header {
   font-size:1.3em;
   font-weight: normal;
   padding: 5px;
-
-
 }
 .info-capa h3
 {
@@ -414,10 +410,10 @@ h3 img
 }
 .best-offers-grid
 {
-    display:flex;  
-    justify-content:center;
-    margin:0px;
-    gap: 0.5%;
+  display:flex;  
+  justify-content:center;
+  margin:0px;
+  gap: 0.5%;
 }
 .italy, .europe, .world
 {
@@ -425,19 +421,19 @@ h3 img
 }
 .world li, .europe li, .italy li
 {
-    display: flex;
-    flex-direction: column;
-    flex-grow: 0;
-    background-color: white;
-    color: $text-color3;
-    width: 100%;
-    height:100px;
-    padding:10px;
-    border: lightgrey 1px solid;
-    border-radius: 6px;
-    box-shadow: 0px 2px 10px gray;
-    margin:25px;
-    position: relative;
+  display: flex;
+  flex-direction: column;
+  flex-grow: 0;
+  background-color: white;
+  color: $text-color3;
+  width: 100%;
+  height:100px;
+  padding:10px;
+  border: lightgrey 1px solid;
+  border-radius: 6px;
+  box-shadow: 0px 2px 10px gray;
+  margin:25px;
+  position: relative;
 }
 .world li p, .europe li p, .italy li p
 {
@@ -496,21 +492,21 @@ h3 img
 }
 #catania
 {
-    background-image: url(./img/catania.png);
-    background-repeat: no-repeat;
-    background-size: 100% 65%;
+  background-image: url(./img/catania.png);
+  background-repeat: no-repeat;
+  background-size: 100% 65%;
 }
 #athenes
 {
-    background-image: url(./img/athenes.jpg);
-    background-repeat: no-repeat;
-    background-size: 100% 65%;
+  background-image: url(./img/athenes.jpg);
+  background-repeat: no-repeat;
+  background-size: 100% 65%;
 }
 #new-york
 {
-    background-image: url(./img/newyork.jpg);
-    background-repeat: no-repeat;
-    background-size: 100% 65%;
+  background-image: url(./img/newyork.jpg);
+  background-repeat: no-repeat;
+  background-size: 100% 65%;
 }
 
 //Fim best offers 
@@ -534,16 +530,16 @@ h3 img
 }
 .suggestions-grid
 {
-    display: grid;
-    grid-template-columns: repeat(5, 175px);
-    gap: 5%;
-    justify-content: center;
-    margin: 0 auto;
+  display: grid;
+  grid-template-columns: repeat(5, 175px);
+  gap: 5%;
+  justify-content: center;
+  margin: 0 auto;
 }
 .suggestion-options img
 {
-    border-radius: 150px 0 150px 0;
-    width: 100%;
+  border-radius: 150px 0 150px 0;
+  width: 100%;
 }
 .suggestion-text
 {
@@ -553,8 +549,8 @@ h3 img
 }
 .suggestion-text h2
 {
-    font-size: medium;
-    font-weight: 400;
+  font-size: medium;
+  font-weight: 400;
 }
 .suggestion-text a 
 {
@@ -570,30 +566,30 @@ h3 img
 }
 .check-offers
 {
-    height: 500px;
-    padding: 40px 20px;
-    margin: 2% 15%;
+  height: 500px;
+  padding: 40px 20px;
+  margin: 2% 15%;
 }
 .offers-header h1
 {
-    font-size: 2em;
-    color:$text-color3;
+  font-size: 2em;
+  color:$text-color3;
 }
 .offers-header h2
 {
-    font-size: 1em;
-    margin-bottom: 5px;
+  font-size: 1em;
+  margin-bottom: 5px;
 }
 .offers-header p
 {
-    font-size: 1em;
-    margin-bottom: 30px;
+  font-size: 1em;
+  margin-bottom: 30px;
 }
 .offers-grid
 {
-    display: grid;
-    grid-template-columns: repeat(4, 350px);
-    justify-content: space-between;
+  display: grid;
+  grid-template-columns: repeat(4, 350px);
+  justify-content: space-between;
 }
 .offer
 {
@@ -602,15 +598,15 @@ h3 img
 }
 .offer img
 {
-    width: 100%;
-    height:75% ;
+  width: 100%;
+  height:75% ;
 }
 .offer a
 {
-    font-size: 0.9em;
-    color: $text-color3;
-    text-decoration: none;
-  }
+  font-size: 0.9em;
+  color: $text-color3;
+  text-decoration: none;
+}
 //Fim offers
 
 //Partners
@@ -630,16 +626,16 @@ h3 img
 }
 .partners-grid
 {
-    width: 100%;
-    display: grid;
-    grid-template-columns: repeat(3, 400px);  
-    justify-content:space-between ;
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(3, 400px);  
+  justify-content:space-between ;
 }
 .partners img
 {
-    width: 100%;
-    height:60% ;
-    margin-bottom: 10px;
+  width: 100%;
+  height:60% ;
+  margin-bottom: 10px;
 }
 #part-but
 {
