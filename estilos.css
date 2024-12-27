@@ -859,4 +859,15 @@ footer p {
   header nav .menu-other button #menu {
     height: 45px;
   }
+  .capa > *:not(.form-container) {
+    display: none;
+  }
+  .capa .form-container {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    border-radius: 0;
+  }
 }/*# sourceMappingURL=estilos.css.map */
