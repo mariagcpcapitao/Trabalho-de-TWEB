@@ -5,10 +5,11 @@
 $primary-color: #1770cf;
 $text-color1: white;
 $text-color2: #333333;
+$text-color3:#0B2340;
 $background-color: white;
 
     // Fontes
-$font-family: 'Montesserrat', sans-serif;
+$font-family: 'Lato', sans-serif;
 $heading-size: 1.5rem;
 $text-size: 1rem;
 
@@ -27,7 +28,7 @@ $margin-default: 16px;
 
 body {
   font-family: $font-family;
-  color: $text-color2;
+  color: $text-color3;
   background-color: $background-color;
   padding-top: 130px;
 }
@@ -314,12 +315,11 @@ h3 img
 {
   position: relative;
 }
-
 .info-text 
 {
   visibility: hidden;
   width: 160px;
-  background-color: #0B2340;
+  background-color:$text-color3;
   color: #fff;
   text-align: left;
   font-size: 0.75em;
@@ -330,20 +330,17 @@ h3 img
   bottom: 20px;
   left: 65px;
 }
-
 .info-icon 
 {
   width: 15px;
   cursor: pointer;
 }
 
-.info-icon:hover + .info-text 
+.info-icon:hover + .info-text //o + é pq o icon e o text sao irmaos se fossem pai e filho n  tinha nd
 {
   visibility: visible;
   opacity: 1;
 }
-
-
 #passangers
 {
   width: 100%;
@@ -371,7 +368,6 @@ h3 img
   border-radius: 0px 10px 0px 0px;
   display: flex;
   justify-content: space-between;
-  color:#333333;
 }
 .select-capa button
 {
@@ -405,6 +401,7 @@ h3 img
 //Best offers
 .best-offers-header h1
 {
+  font-size: 2em;
   text-align: center;
   margin: 20px;
 }
@@ -432,7 +429,7 @@ h3 img
     flex-direction: column;
     flex-grow: 0;
     background-color: white;
-    color: rgb(44, 44, 44);
+    color: $text-color3;
     width: 100%;
     height:100px;
     padding:10px;
@@ -477,6 +474,9 @@ h3 img
 .italy h1, .world h1, .europe h1
 {
   text-align: center;
+  font-size: 1.3em;
+  margin: 0;
+  padding: 0;
 }
  .italy #catania, .world #new-york, .europe #athenes
 {
@@ -521,6 +521,17 @@ h3 img
   text-align: center;
   padding: 30px;
 }
+.suggestions-header h1
+{
+  font-size: 2em;
+  color:$text-color3;
+  margin: 10px 0px;
+}
+.suggestions-header p
+{
+  font-weight:600;
+  color:$text-color3;
+}
 .suggestions-grid
 {
     display: grid;
@@ -534,6 +545,22 @@ h3 img
     border-radius: 150px 0 150px 0;
     width: 100%;
 }
+.suggestion-text
+{
+  width: 90%;
+  text-align: center;
+  margin: 30px;
+}
+.suggestion-text h2
+{
+    font-size: medium;
+    font-weight: 400;
+}
+.suggestion-text a 
+{
+  font-size:1.5em;
+  font-weight: 600;
+}
 //Fim suggestions
 
 //Offers
@@ -543,19 +570,23 @@ h3 img
 }
 .check-offers
 {
+    height: 500px;
     padding: 40px 20px;
     margin: 2% 15%;
 }
 .offers-header h1
 {
     font-size: 2em;
-    color: #003366;
-    margin-bottom: 10px;
+    color:$text-color3;
+}
+.offers-header h2
+{
+    font-size: 1em;
+    margin-bottom: 5px;
 }
 .offers-header p
 {
     font-size: 1em;
-    color: #666;
     margin-bottom: 30px;
 }
 .offers-grid
@@ -577,7 +608,7 @@ h3 img
 .offer a
 {
     font-size: 0.9em;
-    color: gray;
+    color: $text-color3;
     text-decoration: none;
   }
 //Fim offers
@@ -586,6 +617,16 @@ h3 img
 .our-partners
 {
   margin:2% 15%
+}
+.partners-header
+{
+  margin: 50px 0px;
+}
+.partners-header h1
+{
+  font-size: 2em;
+  color:$text-color3;
+  margin: 10px 0px;
 }
 .partners-grid
 {

@@ -5,8 +5,8 @@
 }
 
 body {
-  font-family: "Montesserrat", sans-serif;
-  color: #333333;
+  font-family: "Lato", sans-serif;
+  color: #0B2340;
   background-color: white;
   padding-top: 130px;
 }
@@ -317,7 +317,6 @@ h3 img {
   border-radius: 0px 10px 0px 0px;
   display: flex;
   justify-content: space-between;
-  color: #333333;
 }
 
 .select-capa button {
@@ -347,6 +346,7 @@ h3 img {
 }
 
 .best-offers-header h1 {
+  font-size: 2em;
   text-align: center;
   margin: 20px;
 }
@@ -375,7 +375,7 @@ h3 img {
   flex-direction: column;
   flex-grow: 0;
   background-color: white;
-  color: rgb(44, 44, 44);
+  color: #0B2340;
   width: 100%;
   height: 100px;
   padding: 10px;
@@ -420,6 +420,9 @@ h3 img {
 
 .italy h1, .world h1, .europe h1 {
   text-align: center;
+  font-size: 1.3em;
+  margin: 0;
+  padding: 0;
 }
 
 .italy #catania, .world #new-york, .europe #athenes {
@@ -461,6 +464,17 @@ h3 img {
   padding: 30px;
 }
 
+.suggestions-header h1 {
+  font-size: 2em;
+  color: #0B2340;
+  margin: 10px 0px;
+}
+
+.suggestions-header p {
+  font-weight: 600;
+  color: #0B2340;
+}
+
 .suggestions-grid {
   display: grid;
   grid-template-columns: repeat(5, 175px);
@@ -474,24 +488,44 @@ h3 img {
   width: 100%;
 }
 
+.suggestion-text {
+  width: 90%;
+  text-align: center;
+  margin: 30px;
+}
+
+.suggestion-text h2 {
+  font-size: medium;
+  font-weight: 400;
+}
+
+.suggestion-text a {
+  font-size: 1.5em;
+  font-weight: 600;
+}
+
 #container-offers {
   background-color: rgba(208, 220, 229, 0.288);
 }
 
 .check-offers {
+  height: 500px;
   padding: 40px 20px;
   margin: 2% 15%;
 }
 
 .offers-header h1 {
   font-size: 2em;
-  color: #003366;
-  margin-bottom: 10px;
+  color: #0B2340;
+}
+
+.offers-header h2 {
+  font-size: 1em;
+  margin-bottom: 5px;
 }
 
 .offers-header p {
   font-size: 1em;
-  color: #666;
   margin-bottom: 30px;
 }
 
@@ -513,12 +547,22 @@ h3 img {
 
 .offer a {
   font-size: 0.9em;
-  color: gray;
+  color: #0B2340;
   text-decoration: none;
 }
 
 .our-partners {
   margin: 2% 15%;
+}
+
+.partners-header {
+  margin: 50px 0px;
+}
+
+.partners-header h1 {
+  font-size: 2em;
+  color: #0B2340;
+  margin: 10px 0px;
 }
 
 .partners-grid {
