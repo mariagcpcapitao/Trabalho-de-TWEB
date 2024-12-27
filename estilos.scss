@@ -49,6 +49,7 @@ header {
   top:0;
   width: 100%;
   z-index: 1000;
+  white-space: nowrap;
 
   #information {
     background-color: orange;
@@ -381,6 +382,9 @@ header {
         height: 25px;
         width: 25px;
       }
+    }
+    .menu-other{
+      display:none;
     }
   }
 }
@@ -928,3 +932,47 @@ footer {
   }
 }
 
+
+
+
+//Media Queries
+
+@media (max-width: 1240px){ 
+  header{
+    #information{
+      h6{
+        display:none;
+      }
+    }
+
+    nav{
+      .menu-options{
+        display:none !important;
+      }
+      .menu2{
+        display:none;
+      }
+
+      .menu-other{
+        display:flex;
+
+        button {
+          display:flex;
+          align-items: center;
+          background-color: transparent;
+          border: none;
+          
+  
+          img{
+            height: 35px;
+            width: fit-content;
+          }
+          
+          #menu{
+            height:45px;
+          }
+        }
+      }
+    }
+  }
+}

@@ -27,6 +27,7 @@ header {
   top: 0;
   width: 100%;
   z-index: 1000;
+  white-space: nowrap;
 }
 header #information {
   background-color: orange;
@@ -317,6 +318,9 @@ header nav .menu2 #log-in {
 header nav .menu2 img {
   height: 25px;
   width: 25px;
+}
+header nav .menu-other {
+  display: none;
 }
 
 @keyframes rolarTexto {
@@ -826,4 +830,33 @@ footer p {
   font-size: small;
   text-align: center;
   box-shadow: 0 -2px 0 rgba(255, 255, 255, 0.2), 0 2px 0 rgba(255, 255, 255, 0.2);
+}
+
+@media (max-width: 1240px) {
+  header #information h6 {
+    display: none;
+  }
+  header nav .menu-options {
+    display: none !important;
+  }
+  header nav .menu2 {
+    display: none;
+  }
+  header nav .menu-other {
+    display: flex;
+  }
+  header nav .menu-other button {
+    display: flex;
+    align-items: center;
+    background-color: transparent;
+    border: none;
+  }
+  header nav .menu-other button img {
+    height: 35px;
+    width: -moz-fit-content;
+    width: fit-content;
+  }
+  header nav .menu-other button #menu {
+    height: 45px;
+  }
 }/*# sourceMappingURL=estilos.css.map */
