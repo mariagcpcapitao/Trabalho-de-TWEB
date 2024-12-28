@@ -44,7 +44,7 @@ const capas = [
   document.addEventListener("DOMContentLoaded", () => {
     const buttons = document.querySelectorAll(".select-form button");
     const forms = document.querySelectorAll(".form-container form");
-    
+
     function toggleActiveButton(button) {
         buttons.forEach(btn => {
             if (btn === button) {
