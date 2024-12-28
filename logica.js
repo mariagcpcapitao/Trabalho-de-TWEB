@@ -76,7 +76,6 @@ const capas = [
         });
     });
 
-
     document.querySelector("#form1").style.display = "block";
     toggleActiveButton(buttons[0]); 
 });
@@ -102,11 +101,39 @@ radioButtons.forEach(radio => {
 });
 
 //Quando clicas "Proceed"
-document.getElementById('search-button').addEventListener('click', function() { 
-  const departure = document.getElementById('departure').value;
-  const data = document.getElementById('data').value;
-  const TipoDeVoo = document.getElementById('TipoDeVoo').value;
+document.getElementById('form4').addEventListener('submit', function(event) {
+  event.preventDefault(); //Evita que faca reset quando clica no botao
 
-  
+  const departure = document.getElementById('departure').value;     
+  const flightDateValue = document.getElementById('data').value;
+  const flightDate = new Date(flightDateValue); // Para ter a certeza que esta certo
+  const TipoDeVoo = document.querySelector('select').value; 
+  console.log({departure, flightDateValue, TipoDeVoo }); 
 
-})
+  if (departure && flightDateValue && TipoDeVoo) { 
+      document.getElementById('form4').style.display = 'none'; 
+      const flightInfo = document.getElementById('flightInfo'); 
+      flightInfo.style.display = 'block'; 
+
+      const flight1Time = departure.toLowerCase() === 'lisboa' ? '10:05' : '12:10'; 
+      const flight2Time = departure.toLowerCase() === 'lisboa' ? '18:05' : '20:10'; 
+      const flight1Status = (flightDate.getDate() % 2 === 0) ? 'No horário' : 'Atrasado'; 
+      const flight2Status = (flightDate.getMonth() % 2 === 0) ? 'No horário' : 'Chegou'; 
+
+      document.getElementById('flight1').innerHTML = 
+                                        ` <p id="">Voo 1:</p> <br> 
+                                        Número de Voo: TP1 <br>
+                                        Dia do Voo: ${flightDate.toLocaleDateString()} <br> 
+                                        Hora do Voo: ${flight1Time} <br> 
+                                        Estado: ${flight1Status} `; 
+
+
+      document.getElementById('flight2').innerHTML = 
+                                       ` <strong>Voo 2:</strong> <br> 
+                                      Número de Voo: TP2 <br>
+                                      Dia do Voo: ${flightDate.toLocaleDateString()} <br> 
+                                      Hora do Voo: ${flight2Time} <br> 
+                                      Estado: ${flight2Status} `; 
+  }
+});
+

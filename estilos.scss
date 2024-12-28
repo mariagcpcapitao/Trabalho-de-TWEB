@@ -684,11 +684,6 @@ h3 img
   font-size: 0.7em;
   margin: 20px 0px;
 }
-
-#flightInfo{ //Resultado da Form Estado de Voo
-  display:none;
-}
-
 //Fim capa
 
 //Best offers
@@ -951,6 +946,23 @@ h3 img
 }
 //Fim partners 
 
+
+//Resultado da Form Estado de Voo
+#flightInfo{ 
+  display:none;
+  background: $background-color;
+  color:$text-color2;
+  border-radius: 6px;
+}
+
+
+
+
+
+
+
+
+
 //Footer
 footer {
   background-color: $primary-color;
@@ -1104,4 +1116,29 @@ footer {
       border-radius: 0;
     }
   }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+//APAGAR DEPOIS!!!!!!
+
+#passangers-form{
+  display: none !important;
 }

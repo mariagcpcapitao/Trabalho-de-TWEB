@@ -613,10 +613,6 @@ h3 img {
   margin: 20px 0px;
 }
 
-#flightInfo {
-  display: none;
-}
-
 .best-offers-header h1 {
   font-size: 2em;
   text-align: center;
@@ -865,6 +861,13 @@ h3 img {
   background-color: white;
 }
 
+#flightInfo {
+  display: none;
+  background: white;
+  color: #333333;
+  border-radius: 6px;
+}
+
 footer {
   background-color: #1770cf;
   color: white;
@@ -988,4 +991,7 @@ footer p {
     bottom: 0;
     border-radius: 0;
   }
+}
+#passangers-form {
+  display: none !important;
 }/*# sourceMappingURL=estilos.css.map */
