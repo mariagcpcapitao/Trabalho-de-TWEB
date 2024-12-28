@@ -111,7 +111,7 @@ document.getElementById('form4').addEventListener('submit', function(event) {
   console.log({departure, flightDateValue, TipoDeVoo }); 
 
   if (departure && flightDateValue && TipoDeVoo) { 
-      document.getElementById('form4').style.display = 'none'; 
+      document.getElementById('hidden').style.display = 'none'; 
       const flightInfo = document.getElementById('flightInfo'); 
       flightInfo.style.display = 'block'; 
 
@@ -121,19 +121,17 @@ document.getElementById('form4').addEventListener('submit', function(event) {
       const flight2Status = (flightDate.getMonth() % 2 === 0) ? 'No horário' : 'Chegou'; 
 
       document.getElementById('flight1').innerHTML = 
-                                        ` <p id="">Voo 1:</p> <br> 
-                                        Número de Voo: TP1 <br>
-                                        Dia do Voo: ${flightDate.toLocaleDateString()} <br> 
-                                        Hora do Voo: ${flight1Time} <br> 
-                                        Estado: ${flight1Status} `; 
+                                        ` <p id="titulo">TP1:</p> <br> 
+                                          <strong>Dia do Voo:</strong> ${flightDate.toLocaleDateString()} <br> 
+                                          <strong>Hora do Voo:</strong> ${flight1Time} <br> 
+                                          <strong>Estado:</strong> ${flight1Status} <br><br>`; 
 
 
       document.getElementById('flight2').innerHTML = 
-                                       ` <strong>Voo 2:</strong> <br> 
-                                      Número de Voo: TP2 <br>
-                                      Dia do Voo: ${flightDate.toLocaleDateString()} <br> 
-                                      Hora do Voo: ${flight2Time} <br> 
-                                      Estado: ${flight2Status} `; 
+                                       ` <p id="titulo">TP2:</p> <br>
+                                         <strong>Dia do Voo:</strong>${flightDate.toLocaleDateString()} <br> 
+                                         <strong>Hora do Voo:</strong> ${flight2Time} <br> 
+                                         <strong>Estado:</strong> ${flight2Status}<br> `; 
   }
 });
 

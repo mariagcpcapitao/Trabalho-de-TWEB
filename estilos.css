@@ -865,7 +865,13 @@ h3 img {
   display: none;
   background: white;
   color: #333333;
-  border-radius: 6px;
+  text-align: center;
+}
+#flightInfo #titulo {
+  font-size: 2em;
+  font-weight: bold;
+  text-align: center;
+  color: #1770cf;
 }
 
 footer {
@@ -991,7 +997,4 @@ footer p {
     bottom: 0;
     border-radius: 0;
   }
-}
-#passangers-form {
-  display: none !important;
 }/*# sourceMappingURL=estilos.css.map */

@@ -952,8 +952,18 @@ h3 img
   display:none;
   background: $background-color;
   color:$text-color2;
-  border-radius: 6px;
+  text-align: center;
+
+
+  #titulo{
+    font-size:2em;
+    font-weight: bold;
+    text-align: center;
+    color:$primary-color;
+  }
 }
+
+
 
 
 
@@ -1116,29 +1126,4 @@ footer {
       border-radius: 0;
     }
   }
-}
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-//APAGAR DEPOIS!!!!!!
-
-#passangers-form{
-  display: none !important;
 }
