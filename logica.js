@@ -101,3 +101,12 @@ radioButtons.forEach(radio => {
   }}); 
 });
 
+//Quando clicas "Proceed"
+document.getElementById('search-button').addEventListener('click', function() { 
+  const departure = document.getElementById('departure').value;
+  const data = document.getElementById('data').value;
+  const TipoDeVoo = document.getElementById('TipoDeVoo').value;
+
+  
+
+})

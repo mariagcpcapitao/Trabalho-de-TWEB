@@ -613,6 +613,10 @@ h3 img {
   margin: 20px 0px;
 }
 
+#flightInfo {
+  display: none;
+}
+
 .best-offers-header h1 {
   font-size: 2em;
   text-align: center;
