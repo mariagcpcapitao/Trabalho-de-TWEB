@@ -230,25 +230,25 @@
         </form>
         <form id="form4">
             <div class="select-flight">
-                <div><input type="radio" name="select" value="airport">By airport</div>
+                <div><input type="radio" name="select" value="airport" required>By airport</div>
                 <div><input type="radio" name="select" value="origin">By origin and destination</div>
                 <div><input type="radio" name="select" value="flight">By flight</div>
             </div>
         <div id="hidden">
             <div>
-                <select placeholder="Flight type">
+                <select placeholder="Flight type" required>
                     <option value="1">One-way flight</option>
                     <option value="2">Return flight</option>
                 </select> 
             </div>
             <div id="data-voo" class="data-voo">
                 <p><img src="img/calendar.png"> Select dates</p>
-                <input type="date">
+                <input type="date" required>
                 <hr/>
             </div>
             <div>
                 <p>From</p>
-                <input type="text" value="Lisboa">
+                <input type="text" value="Lisboa" required>
                 <hr/>
             </div>
         </div>

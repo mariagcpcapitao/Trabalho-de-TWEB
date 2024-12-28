@@ -81,9 +81,9 @@ const capas = [
     toggleActiveButton(buttons[0]); 
 });
 
+
+
 //Estado de Voo 
-
-
 //Esconde quando nao e "By airport"
 const radioButtons = document.querySelectorAll('input[name="select"]');
 const hiddenElement = document.getElementById('hidden');
