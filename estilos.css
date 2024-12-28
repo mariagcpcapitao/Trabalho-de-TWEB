@@ -560,12 +560,31 @@ h3 img {
   margin: 6px;
 }
 
-#passangers-form img {
-  width: 30px;
+.passangers-type img {
+  width: 40px;
+  height: 40px;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 
-.passangers-type div {
-  display: inline;
+.passangers-type label {
+  font-size: 16px;
+  font-weight: bold;
+  margin-bottom: 4px;
+  display: block;
+}
+
+.passangers-type span {
+  font-size: 12px;
+  color: #777;
+}
+
+.passangers-type {
+  display: grid;
+  grid-template-columns: 40px 1fr auto;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 10px;
 }
 
 #conf-button {
