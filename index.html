@@ -229,7 +229,6 @@
             <div id="search-div"><button id="search-button">Search</button></div>
         </form>
         <form id="form4">
-        
             <div class="select-flight">
                 <div><input type="radio" name="select" value="airport" required>By airport</div>
                 <div><input type="radio" name="select" value="origin">By origin and destination</div>
@@ -237,29 +236,23 @@
             </div>
         <div id="hidden">
             <div>
-                <select placeholder="Flight type" id="TipoDeVoo" required>
+                <select placeholder="Flight type" required>
                     <option value="1">One-way flight</option>
                     <option value="2">Return flight</option>
                 </select> 
             </div>
             <div id="data-voo" class="data-voo">
                 <p><img src="img/calendar.png"> Select dates</p>
-                <input type="date" id="data" required>
+                <input type="date" required>
                 <hr/>
             </div>
             <div>
                 <p>From</p>
-                <input type="text" value="Lisboa" id="departure" required>
+                <input type="text" value="Lisboa" required>
                 <hr/>
             </div>
-        
-            <div id="search-div"><button  type="submit" id="search-button">Proceed</button></div>
         </div>
-        </form>
-        <form id="flightInfo"> <!--Resultado da form4-->
-            <p id="flight1"></p>
-            <p id="flight2"></p> 
-            <div id="search-div"><button id="search-button">OK</button></div>
+            <div id="search-div"><button id="search-button">Proceed</button></div>
         </form>
     </div>
     <div id="container-capa">
@@ -297,9 +290,9 @@
             <div class="passangers-type">
                 <div><img src="img/adulto.png"></div>
                 <div><label> Adult</label></div>
-                <div>
+                <div class="contagem">
                     <button class="minus">−</button>
-                    <span class="count">1</span>
+                    <span class="count"> 1 </span>
                     <button class="plus">+</button>
                 </div>
             </div>
@@ -310,9 +303,9 @@
                     <label> Child</label>
                     <span>2-11 years old</span>
                 </div>
-                <div>
+                <div class="contagem">
                     <button class="minus">−</button>
-                    <span class="count">0</span>
+                    <span class="count"> 0 </span>
                     <button class="plus">+</button>
                 </div>
             </div>
@@ -323,9 +316,9 @@
                     <label> Infant</label>
                     <span>0-23 months</span>
                 </div>
-                <div>
+                <div class="contagem">
                     <button class="minus">−</button>
-                    <span class="count">0</span>
+                    <span class="count"> 0 </span>
                     <button class="plus">+</button>
                 </div>
             </div>
