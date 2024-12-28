@@ -1,4 +1,13 @@
+//Menu de janela reduzida
 
+
+
+
+
+
+
+
+//Capa e formularios
 const capas = [
     { imagem: './img/rome-tripoli.jpg', id: 'capa1' },
     { imagem: './img/dubai-rome.jpg', id: 'capa2' },
@@ -134,4 +143,3 @@ document.getElementById('form4').addEventListener('submit', function(event) {
                                          <strong>Estado:</strong> ${flight2Status}<br> `; 
   }
 });
-
