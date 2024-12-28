@@ -997,4 +997,50 @@ footer p {
     bottom: 0;
     border-radius: 0;
   }
+  .best-offers-grid {
+    flex-wrap: wrap;
+  }
+  .suggestions-grid {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  .suggestions-grid .suggestion-options {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: auto 175px;
+    width: 175px;
+  }
+  .suggestions-grid .suggestion-options img {
+    width: 100%;
+  }
+  footer {
+    display: flex;
+    align-items: center;
+  }
+  footer .linha2 {
+    display: grid !important;
+    grid-template-rows: repeat(5, 1fr) !important;
+    grid-template-areas: "services" "destinationsandoffers" "ita-airways" "assist" "regulations" !important;
+  }
+  footer .linha2 #titulo {
+    border-bottom: 1px solid rgba(255, 255, 255, 0.5);
+    font-weight: normal;
+    font-size: small;
+  }
+  footer .linha2 .services {
+    grid-area: services;
+  }
+  footer .linha2 .destinationsandoffers {
+    grid-area: destinationsandoffers;
+  }
+  footer .linha2 .ita-airways {
+    grid-area: ita-airways;
+  }
+  footer .linha2 .assist {
+    grid-area: assist;
+  }
+  footer .linha2 .regulations {
+    grid-area: regulations;
+  }
 }/*# sourceMappingURL=estilos.css.map */

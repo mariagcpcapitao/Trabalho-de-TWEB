@@ -1076,6 +1076,7 @@ footer {
 //Media Querie
 
 @media (max-width: 1240px){ 
+
   header{
     #information{
       h6{
@@ -1124,6 +1125,63 @@ footer {
       right: 0;
       bottom: 0;
       border-radius: 0;
+    }
+  }
+  .best-offers-grid{
+    flex-wrap: wrap;
+  }
+  .suggestions-grid{
+    display: flex;
+    flex-wrap:wrap;
+
+    .suggestion-options{
+      display:flex;
+      flex-direction: column;
+      justify-content: center;
+      padding:auto 175px;
+      width: 175px;
+      img{
+        width: 100%;
+      }
+    }
+  }
+
+  footer{
+    display:flex;
+    align-items: center;
+
+    .linha2 {
+      display: grid !important;
+      grid-template-rows: repeat(5, 1fr) !important;
+      grid-template-areas: 
+        "services"
+        "destinationsandoffers" 
+        "ita-airways" 
+        "assist" 
+        "regulations" !important;
+
+
+      #titulo{
+        border-bottom: 1px solid rgba($background-color, 0.5);
+        font-weight: normal;
+        font-size: small;
+      }
+
+      .services {
+        grid-area: services;
+      }
+      .destinationsandoffers {
+        grid-area: destinationsandoffers;
+      }
+      .ita-airways {
+        grid-area: ita-airways;
+      }
+      .assist {
+        grid-area: assist;
+      }
+      .regulations {
+        grid-area: regulations;
+      }
     }
   }
 }
