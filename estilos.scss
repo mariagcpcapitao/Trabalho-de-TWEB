@@ -573,6 +573,10 @@ h3 img
 {
   width: 15px;
 }
+.data-voo p
+{
+  margin: 10px 0px;
+}
 .select-flight
 {
   display: grid;
@@ -592,7 +596,7 @@ h3 img
   padding:0px 30px;
   justify-content: space-between;
 }
-#check-in, #manage-flights, #passangers-form, #estado-do-voo 
+#form2, #form3, #passangers-form, #form4
 {
   display: none;
 }
@@ -783,6 +787,7 @@ h3 img
 //Offers
 #container-offers
 {
+  width: 100%;
   background-color: rgba(208, 220, 229, 0.288);
 }
 .check-offers

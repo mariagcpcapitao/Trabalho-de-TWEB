@@ -41,24 +41,42 @@ const capas = [
   trocarCapa(0);
   
 
+  document.addEventListener("DOMContentLoaded", () => {
+    const buttons = document.querySelectorAll(".select-form button");
+    const forms = document.querySelectorAll(".form-container form");
+    
+    function toggleActiveButton(button) {
+        buttons.forEach(btn => {
+            if (btn === button) {
+                btn.style.color = "#0B2340";
+                btn.style.borderBottom = "2px solid #0B2340";
+            } else {
+                btn.style.color = "#7f7f7faa";
+                btn.style.borderBottom = "none"; 
+            }
+        });
+    }
 
-  const buttons = document.querySelectorAll('.select-form button');
+    buttons.forEach(button => {
+        button.addEventListener("click", () => {
 
-  const forms = document.querySelectorAll('.form-container form');
-
-
-  buttons.forEach(button => {
-      button.addEventListener('click', () => {
-
-          forms.forEach(form => {
-              form.style.display = 'none';
-          });
-          const targetForm = document.getElementById(button.getAttribute('data-target'));
-          if (targetForm) {
-              targetForm.style.display = 'block';
-          }
-      });
-  });
+            forms.forEach(form => {
+                form.style.display = "none";
+            });
 
 
-  document.getElementById('book').style.display = 'block';
+            const targetFormId = button.getAttribute("data-target");
+            const targetForm = document.querySelector(`#form${targetFormId}`);
+            if (targetForm) {
+                targetForm.style.display = "block";
+            }
+
+
+            toggleActiveButton(button);
+        });
+    });
+
+
+    document.querySelector("#form1").style.display = "block";
+    toggleActiveButton(buttons[0]); 
+});
