@@ -862,34 +862,51 @@ footer {
   padding-top: 70px;
   border-top:#003366 5px solid;
 
+  .linha1{
+    margin-bottom: 30px;
 
-  .linha2{
-    display:flex;
-    justify-content: space-between;
-    align-items: center;
-    width: 100%;
+    img{
+      height: 50px;
+    }
+  }
 
-    ul{
-      display: flex;
-      justify-content: space-between;
-      width: 100%;
 
-      .titulo{
-        align-items: center;
-        box-shadow: 0 2px 0 rgba(255, 255, 255, 0.2);
-      }
+  .linha2 {
+    display: grid;
+    font-weight: bold;
+    grid-template-columns: repeat(5, 1fr);
+    grid-template-areas: 
+      "services destinationsandoffers ita-airways assist regulations";
+    gap: 20px;
 
-      li{
-        display:inline-block;
-        margin:20px;
-        
-        ul{
-          display:flex;
-          flex-direction: column;
-          line-height: 0.4;
-          font-weight: bold;
-        }
-      }
+
+    #titulo{
+      border-bottom: 1px solid rgba($background-color, 0.5);
+      font-weight: normal;
+      font-size: small;
+    }
+
+    .services {
+      grid-area: services;
+    }
+    .destinationsandoffers {
+      grid-area: destinationsandoffers;
+    }
+    .ita-airways {
+      grid-area: ita-airways;
+    }
+    .assist {
+      grid-area: assist;
+    }
+    .regulations {
+      grid-area: regulations;
+    }
+
+    a {
+      text-decoration: none;
+      display: block;
+      padding: 10px;
+      white-space: nowrap;
     }
   }
   
@@ -906,9 +923,9 @@ footer {
       justify-content: flex-start;
 
       img{
-        height:50px;
-        width: 150px;
+        height:35px;
         object-fit: cover;
+        margin-left:15px;
       }
     }
     .social-media{
@@ -919,6 +936,7 @@ footer {
         height: 25px;
         width: 25px;
         object-fit: cover;
+        margin-right:15px;
       }
     }
   }
@@ -927,8 +945,8 @@ footer {
     padding:15px;
     font-size: small;
     text-align: center;
-    box-shadow: 0 -2px 0  rgba(255, 255, 255, 0.2),
-                0 2px 0 rgba(255, 255, 255, 0.2);
+    border-top: 1px solid rgba($background-color, 0.5);
+    border-bottom:1px solid rgba($background-color, 0.5);
   }
 }
 

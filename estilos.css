@@ -773,30 +773,44 @@ footer {
   padding-top: 70px;
   border-top: #003366 5px solid;
 }
+footer .linha1 {
+  margin-bottom: 30px;
+}
+footer .linha1 img {
+  height: 50px;
+}
 footer .linha2 {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  width: 100%;
-}
-footer .linha2 ul {
-  display: flex;
-  justify-content: space-between;
-  width: 100%;
-}
-footer .linha2 ul .titulo {
-  align-items: center;
-  box-shadow: 0 2px 0 rgba(255, 255, 255, 0.2);
-}
-footer .linha2 ul li {
-  display: inline-block;
-  margin: 20px;
-}
-footer .linha2 ul li ul {
-  display: flex;
-  flex-direction: column;
-  line-height: 0.4;
+  display: grid;
   font-weight: bold;
+  grid-template-columns: repeat(5, 1fr);
+  grid-template-areas: "services destinationsandoffers ita-airways assist regulations";
+  gap: 20px;
+}
+footer .linha2 #titulo {
+  border-bottom: 1px solid rgba(255, 255, 255, 0.5);
+  font-weight: normal;
+  font-size: small;
+}
+footer .linha2 .services {
+  grid-area: services;
+}
+footer .linha2 .destinationsandoffers {
+  grid-area: destinationsandoffers;
+}
+footer .linha2 .ita-airways {
+  grid-area: ita-airways;
+}
+footer .linha2 .assist {
+  grid-area: assist;
+}
+footer .linha2 .regulations {
+  grid-area: regulations;
+}
+footer .linha2 a {
+  text-decoration: none;
+  display: block;
+  padding: 10px;
+  white-space: nowrap;
 }
 footer .linha3 {
   display: flex;
@@ -810,10 +824,10 @@ footer .linha3 .download {
   justify-content: flex-start;
 }
 footer .linha3 .download img {
-  height: 50px;
-  width: 150px;
+  height: 35px;
   -o-object-fit: cover;
      object-fit: cover;
+  margin-left: 15px;
 }
 footer .linha3 .social-media {
   display: flex;
@@ -824,12 +838,14 @@ footer .linha3 .social-media img {
   width: 25px;
   -o-object-fit: cover;
      object-fit: cover;
+  margin-right: 15px;
 }
 footer p {
   padding: 15px;
   font-size: small;
   text-align: center;
-  box-shadow: 0 -2px 0 rgba(255, 255, 255, 0.2), 0 2px 0 rgba(255, 255, 255, 0.2);
+  border-top: 1px solid rgba(255, 255, 255, 0.5);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.5);
 }
 
 @media (max-width: 1240px) {
