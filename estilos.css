@@ -524,7 +524,7 @@ h3 img {
   justify-content: space-between;
 }
 
-#form2, #form3, #passangers-form, #form4 {
+#form2, #form3, #form4 {
   display: none;
 }
 
@@ -541,6 +541,49 @@ h3 img {
   position: absolute;
   right: 10px;
   width: 10px;
+}
+
+#passangers-form {
+  background-color: white;
+  width: 650px;
+  height: auto;
+  padding: 20px;
+  display: flex;
+  border-radius: 8px;
+  position: absolute;
+  left: 700px;
+  top: -20px;
+  z-index: 100000;
+}
+
+#passangers-form hr {
+  margin: 6px;
+}
+
+#conf-button {
+  display: flex;
+  justify-content: end;
+}
+
+#conf-button button {
+  width: 30%;
+  height: 50px;
+  border-radius: 6px;
+  border-color: #1770cf;
+  color: white;
+  background-color: #1770cf;
+  position: relative;
+}
+
+.plus, .minus {
+  width: 20px;
+  height: 20px;
+  border-radius: 10px;
+}
+
+.info {
+  font-size: 0.7em;
+  margin: 20px 0px;
 }
 
 .best-offers-header h1 {
