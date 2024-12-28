@@ -420,23 +420,6 @@ header {
   position: absolute;
   bottom: 150px;
 }
-#search-div
-{
-  display: flex;
-
-
-  justify-content: center;
-}
-#search-button
-{
-  width: 100%;
-  height: 50px;
-  border-radius: 6px;
-  border-color: $primary-color;
-  color: white;
-  background-color:$primary-color;
-  position: relative;
-}
 .capa select
 {
   border: none;
@@ -473,11 +456,31 @@ h3 img
   width: 3%;
   height: 8%;
 }
+.select-capa
+{
+  position: absolute;
+  bottom: 0px;
+  width: 1000px;
+  height: 40px;
+  padding: 0px 60px ;
+  background-color: white;
+  border-radius: 0px 10px 0px 0px;
+  display: flex;
+  justify-content: space-between;
+}
+.select-capa button
+{
+  padding:10px;
+  border: none;
+  background: none;
+  color: #7f7f7faa;
+  font-weight: 600;
+}
 .form-container
 {
   background-color: #f5faff;
   width: 470px;
-  height: 530px;
+  height: auto;
   border-radius: 8px;
   box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.1);
   padding: 12px;
@@ -488,10 +491,26 @@ h3 img
   display: flex;
   flex-direction: column;
 }
+#search-div
+{
+  display: flex;
+  justify-content: center;
+}
+#search-button
+{
+  width: 100%;
+  height: 50px;
+  border-radius: 6px;
+  border-color: $primary-color;
+  color: white;
+  background-color:$primary-color;
+  position: relative;
+}
 .form-container div
 {
   margin: 22px 10px;
 }
+//book
 .form-container p
 {
   margin: 3px;
@@ -529,11 +548,45 @@ h3 img
   width: 15px;
   cursor: pointer;
 }
-
-.info-icon:hover + .info-text //o + é pq o icon e o text sao irmaos se fossem pai e filho n  tinha nd
+.info-icon:hover + .info-text 
 {
   visibility: visible;
   opacity: 1;
+}
+//check-in
+#type-check-in
+{
+  display: flex;
+  flex-direction: row;
+  margin: 5px;
+}
+#check-in
+{
+  margin: 4px;
+}
+//flight state
+.select-flight
+{
+  display: grid;
+  grid-template-columns: repeat(3, auto);
+}
+.select-form button
+{
+  border: none;
+  background: none;
+  color: #7f7f7faa;
+  font-weight: 600;
+}
+.select-form
+{
+  display: grid;
+  grid-template-columns: repeat(4, 80px);
+  padding:2px 30px;
+  justify-content: space-between;
+}
+#check-in, #manage-flights, #passangers-form, #estado-do-voo 
+{
+  display: none;
 }
 #passangers
 {
@@ -551,44 +604,6 @@ h3 img
   width: 10px;
 }
 
-.select-capa
-{
-  position: absolute;
-  bottom: 0px;
-  width: 1000px;
-  height: 40px;
-  padding: 0px 60px ;
-  background-color: white;
-  border-radius: 0px 10px 0px 0px;
-  display: flex;
-  justify-content: space-between;
-}
-.select-capa button
-{
-  padding:10px;
-  border: none;
-  background: none;
-  color: #7f7f7faa;
-  font-weight: 600;
-}
-.select-form button
-{
-  border: none;
-  background: none;
-  color: #7f7f7faa;
-  font-weight: 600;
-}
-.select-form
-{
-  display: grid;
-  grid-template-columns: repeat(4, 80px);
-  padding:2px 30px;
-  justify-content: space-between;
-}
-#check-in, #manage-flights, #passangers-form, #estado-do-voo
-{
-  display: none;
-}
 
 //Fim capa
 

@@ -158,10 +158,10 @@
 <section class="capa">
     <div class="form-container">
         <div class="select-form">
-            <button>BOOK</button>
-            <button>CHECK-IN</button>
-            <button>MANAGE FLIGHTS</button>
-            <button>FLIGHT STATUS</button>  
+            <button data-target="book">BOOK</button>
+            <button data-target="check-in">CHECK-IN</button>
+            <button data-target="manage-flights">MANAGE FLIGHTS</button>
+            <button data-target="estado-do-voo">FLIGHT STATUS</button>  
         </div>
         <form id="book">
         <div>
@@ -189,7 +189,6 @@
         <div>
             <p>Passangers</p>
             <button id="passangers">1 adult <img src="img/triangulo-invertido.png"></button>
-            
             <hr/>
         </div>
         <div id="points">
@@ -200,26 +199,40 @@
         <div id="search-div"><button id="search-button">Search</button></div>
         </form>
         <form id="check-in">
-            <input type="radio" name="Booking code">Booking code
-            <input type="radio" name="Frequent flyer">Frequent flyer
-            <p>Booking code or ticket no.</p>
-            <input type="text" name="" placeholder="I.E. YUH67G or 0551234567890"> 
-            <p>Last name</p>
-            <input type="text" name="" placeholder="Last name"> 
-            <button id="search-button">Search</button>
+            <div id="type-check-in">
+                <div><input type="radio"> Booking code</div>
+                <div><input type="radio"> Frequent flyer</div>         
+            </div>
+            <div>
+                <p>Booking code or ticket no.</p>
+                <input type="text"  placeholder="I.E. YUH67G or 0551234567890">
+                <hr/>                
+            </div>
+            <div>
+                <p>Last name</p>
+                <input type="text" name="" placeholder="Last name">
+                <hr/>             
+            </div>
+            <div id="search-div"><button id="search-button">Search</button></div>
         </form>
         <form id="manage-flights">
-            <p>Reservation code/Ticket number</p>
-            <input type="text" name="" placeholder="ie. ESJ123"> 
-            <p>Last name</p>
-            <input type="text" name="" placeholder="Last name"> 
-            <button id="search-button">Search</button>
+            <div>
+                <p>Reservation code/Ticket number</p>
+                <input type="text" name="" placeholder="ie. ESJ123"> 
+                <hr/>
+            </div>
+            <div>
+                <p>Last name</p>
+                <input type="text" name="" placeholder="Last name">
+                <hr/>
+            </div>
+            <div id="search-div"><button id="search-button">Search</button></div>
         </form>
         <form id="estado-do-voo">
             <div class="select-flight">
-                <button>By airport</button>
-                <button>By origin and destination</button>
-                <button>By flight</button>
+                <div><input type="radio">By airport</div>
+                <div><input type="radio">By origin and destination</div>
+                <div><input type="radio">By flight</div>
             </div>
             <div>
                 <select placeholder="Flight type">
