@@ -80,3 +80,4 @@ const capas = [
     document.querySelector("#form1").style.display = "block";
     toggleActiveButton(buttons[0]); 
 });
+
