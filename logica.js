@@ -1,5 +1,4 @@
 //Menu de janela reduzida
-
 document.getElementById("menu").addEventListener("click", function() {
   var menubutao1 = document.getElementById("menubutao1");
   var menubutao2 = document.getElementById("menubutao2");
@@ -7,9 +6,13 @@ document.getElementById("menu").addEventListener("click", function() {
   if (menubutao1.style.display === "none") {
     menubutao1.style.display = "block";
     menubutao2.style.display = "none";
+
+    menucompacto.style.display = "none";
   } else {
     menubutao1.style.display = "none";
     menubutao2.style.display = "block";
+
+    menucompacto.style.display = "block";
   }
 });
 

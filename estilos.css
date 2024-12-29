@@ -331,9 +331,6 @@ header nav .menu-other {
     transform: translateX(-200%);
   }
 }
-#menu-compacto {
-  display: none;
-}
 #menu-compacto #submenu1, #menu-compacto #submenu2, #menu-compacto #submenu3, #menu-compacto #submenu4 {
   display: none;
 }
