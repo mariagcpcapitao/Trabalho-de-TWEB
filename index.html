@@ -317,24 +317,31 @@
             </div>
         <div id="hidden">
             <div>
-                <select placeholder="Flight type" required>
+                <select placeholder="Flight type" id="TipoDeVoo" required>
                     <option value="1">One-way flight</option>
                     <option value="2">Return flight</option>
                 </select> 
             </div>
             <div id="data-voo" class="data-voo">
                 <p><img src="img/calendar.png"> Select dates</p>
-                <input type="date" required>
+                <input type="date" id="data" required>
                 <hr/>
             </div>
             <div>
                 <p>From</p>
-                <input type="text" value="Lisboa" required>
+                <input type="text" value="Lisboa" id="departure" required>
                 <hr/>
             </div>
+            <div id="search-div">
+                <button  type="submit" id="search-button">Proceed</button>
+            </div>
         </div>
-            <div id="search-div"><button id="search-button">Proceed</button></div>
-        </form>
+    </form>
+    <form id="flightInfo"> <!--Resultado da form4-->
+        <p id="flight1"></p>
+        <p id="flight2"></p> 
+        <div id="search-div"><button id="search-button">OK</button></div>
+    </form>
     </div>
     <div id="container-capa">
         <div id="capa1" class="info-capa">
