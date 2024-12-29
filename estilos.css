@@ -802,7 +802,9 @@ h3 img {
 }
 
 #container-offers {
-  width: 2000px;
+  display: flex;
+  justify-content: center;
+  width: 100%;
   background-color: rgba(208, 220, 229, 0.288);
 }
 

@@ -882,7 +882,9 @@ h3 img
 //Offers
 #container-offers
 {
-  width: 2000px;
+  display:flex;
+  justify-content: center;
+  width: 100%;
   background-color: rgba(208, 220, 229, 0.288);
 }
 .check-offers
@@ -966,7 +968,7 @@ h3 img
 //Partners
 .our-partners
 {
-  margin:2% 15%
+  margin:2% 15%;
 }
 .partners-header
 {
@@ -988,7 +990,7 @@ h3 img
 .partners img
 {
   width: 100%;
-  height:60% ;
+  height:60%;
   margin-bottom: 10px;
 }
 #part-but
