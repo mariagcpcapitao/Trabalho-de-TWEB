@@ -331,10 +331,6 @@ header nav .menu-other {
     transform: translateX(-200%);
   }
 }
-#menu-compacto #submenu1, #menu-compacto #submenu2, #menu-compacto #submenu3, #menu-compacto #submenu4 {
-  display: none;
-}
-
 .capa {
   width: 100%;
   height: 700px;
@@ -992,6 +988,10 @@ footer p {
   border-bottom: 1px solid rgba(255, 255, 255, 0.5);
 }
 
+#menucompacto {
+  display: none;
+}
+
 @media (max-width: 1240px) {
   header #information h6 {
     display: none;
@@ -1074,5 +1074,11 @@ footer p {
   }
   footer .linha2 .regulations {
     grid-area: regulations;
+  }
+  #menu-compacto {
+    display: none;
+  }
+  #menu-compacto #submenu1, #menu-compacto #submenu2, #menu-compacto #submenu3, #menu-compacto #submenu4 {
+    display: none;
   }
 }/*# sourceMappingURL=estilos.css.map */

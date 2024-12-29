@@ -12,10 +12,28 @@ document.getElementById("menu").addEventListener("click", function() {
     menubutao1.style.display = "none";
     menubutao2.style.display = "block";
 
-    menucompacto.style.display = "block";
+    menucompacto.style.display = "flex";
   }
 });
 
+//Controla os submenus
+document.addEventListener("DOMContentLoaded", function() {
+  const buttons = document.querySelectorAll("button");
+  const submenus = document.querySelectorAll("ul");
+
+  buttons.forEach(button => {
+      button.addEventListener("click", function() {
+          const submenuId = "submenu" + this.id.slice(-1); // obter o submenu correspondente ao botão clicado
+          submenus.forEach(submenu => {
+              if (submenu.id === submenuId) {
+                  submenu.style.display = (submenu.style.display === "none" || submenu.style.display === "") ? "block" : "none";
+              } else {
+                  submenu.style.display = "none";
+              }
+          });
+      });
+  });
+});
 
 
 //Capa e formularios
