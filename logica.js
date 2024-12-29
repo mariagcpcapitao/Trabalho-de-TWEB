@@ -1,4 +1,21 @@
+//Menu de janela reduzida
 
+document.getElementById("menu").addEventListener("click", function() {
+  var menubutao1 = document.getElementById("menubutao1");
+  var menubutao2 = document.getElementById("menubutao2");
+  
+  if (menubutao1.style.display === "none") {
+    menubutao1.style.display = "block";
+    menubutao2.style.display = "none";
+  } else {
+    menubutao1.style.display = "none";
+    menubutao2.style.display = "block";
+  }
+});
+
+
+
+//Capa e formularios
 const capas = [
     { imagem: './img/rome-tripoli.jpg', id: 'capa1' },
     { imagem: './img/dubai-rome.jpg', id: 'capa2' },
@@ -186,17 +203,16 @@ document.getElementById('form4').addEventListener('submit', function(event) {
       const flight2Status = (flightDate.getMonth() % 2 === 0) ? 'No horário' : 'Chegou'; 
 
       document.getElementById('flight1').innerHTML = 
-                                        ` <p id="titulo">TP1:</p> <br> 
-                                          <strong>Dia do Voo:</strong> ${flightDate.toLocaleDateString()} <br> 
-                                          <strong>Hora do Voo:</strong> ${flight1Time} <br> 
-                                          <strong>Estado:</strong> ${flight1Status} <br><br>`; 
+                                        `<p id="titulo">TP1:</p> <br> 
+                                          <strong>Dia do Voo:</strong> ${flightDate.toLocaleDateString()}<br> 
+                                          <strong>Hora do Voo:</strong> ${flight1Time}<br> 
+                                          <strong>Estado:</strong> ${flight1Status}<br><br>`; 
 
 
       document.getElementById('flight2').innerHTML = 
-                                       ` <p id="titulo">TP2:</p> <br>
-                                         <strong>Dia do Voo:</strong>${flightDate.toLocaleDateString()} <br> 
-                                         <strong>Hora do Voo:</strong> ${flight2Time} <br> 
-                                         <strong>Estado:</strong> ${flight2Status}<br> `; 
+                                        `<p id="titulo">TP2:</p> <br>
+                                         <strong>Dia do Voo:</strong>${flightDate.toLocaleDateString()}<br> 
+                                         <strong>Hora do Voo:</strong> ${flight2Time}<br> 
+                                         <strong>Estado:</strong> ${flight2Status}<br>`; 
   }
 });
-
