@@ -81,6 +81,20 @@ const capas = [
 });
 
 //Passageiros
+
+document.getElementById("passangers").addEventListener("click", () => {
+    event.preventDefault();
+    const form = document.getElementById("passangers-form");
+    form.style.display = "block"; 
+  });
+  document.getElementById("x").addEventListener("click", () => {
+    event.preventDefault();
+    const form = document.getElementById("passangers-form");
+    form.style.display = "none"; 
+  }); 
+
+
+
 document.addEventListener("DOMContentLoaded", () => {
     // Função para atualizar o contador e o estado dos botões
     function updatePassengerCount(button, action) {

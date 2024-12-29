@@ -627,6 +627,7 @@ h3 img
   left: 700px;
   top:-20px;
   z-index: 100000;
+  display: none;
 }
 #passangers-form hr
 {
@@ -693,6 +694,19 @@ h3 img
   border: 2px solid #777;
   color: #777;
   cursor: not-allowed;
+}
+#x
+{
+  position: absolute;
+  top: 15px;
+  right: 15px;
+  display: block;
+  align-items: end;
+}
+#x button
+{
+  border: none;
+  background: none;
 }
 .info
 {
