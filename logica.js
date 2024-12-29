@@ -1,21 +1,51 @@
 //Menu de janela reduzida
-
-document.getElementById("menu").addEventListener("click", function() {
-  var menubutao1 = document.getElementById("menubutao1");
-  var menubutao2 = document.getElementById("menubutao2");
-  
-  if (menubutao1.style.display === "none") {
-    menubutao1.style.display = "block";
-    menubutao2.style.display = "none";
-  } else {
-    menubutao1.style.display = "none";
-    menubutao2.style.display = "block";
-  }
+//Menu de janela reduzida
+document.addEventListener("DOMContentLoaded", function() { 
+  // Função para ocultar ou mostrar menu compacto com base em consultas de mídia 
+  function handleMediaChange(mediaQuery) { 
+    var menucompacto = document.getElementById("menucompacto"); 
+    var menubutao1 = document.getElementById("menubutao1"); 
+    var menubutao2 = document.getElementById("menubutao2"); 
+    if (mediaQuery.matches) { 
+      //Mostra dos submenus 
+      document.getElementById("menu").addEventListener("click", function() {
+         if (menubutao1.style.display === "none") { 
+          menubutao1.style.display = "block"; 
+          menubutao2.style.display = "none"; 
+          menucompacto.style.display = "none"; 
+        } else { 
+          menubutao1.style.display = "none"; 
+          menubutao2.style.display = "block"; 
+          menucompacto.style.display = "block"; 
+        } 
+      }); 
+      const buttons = document.querySelectorAll("#menucompacto > button");
+      const submenus = document.querySelectorAll("#menucompacto > ul"); 
+      buttons.forEach(button => { 
+        button.addEventListener("click", function() { 
+          const submenuId = "submenu" + this.id.slice(-1);
+          submenus.forEach(submenu => { 
+            if (submenu.id === submenuId) { 
+              submenu.style.display = (submenu.style.display === "none" || submenu.style.display === "") ? "block" : "none"; 
+            } else { 
+              submenu.style.display = "none"; 
+            } 
+          }); 
+        }); 
+      });
+    } else { 
+      menucompacto.style.display = "none"; 
+    } 
+  } 
+  // Definir a consulta de mídia
+  var mediaQuery = window.matchMedia("(max-width: 1240px)"); 
+  handleMediaChange(mediaQuery); 
+  mediaQuery.addEventListener('change', handleMediaChange); 
 });
 
 
 
-//Capa e formularios
+//Capa
 const capas = [
     { imagem: './img/rome-tripoli.jpg', id: 'capa1' },
     { imagem: './img/dubai-rome.jpg', id: 'capa2' },
@@ -99,12 +129,12 @@ const capas = [
 
 //Passageiros
 
-document.getElementById("passangers").addEventListener("click", () => {
+document.getElementById("passangers").addEventListener("click", (event) => {
     event.preventDefault();
     const form = document.getElementById("passangers-form");
     form.style.display = "block"; 
   });
-  document.getElementById("x").addEventListener("click", () => {
+  document.getElementById("x").addEventListener("click", (event) => {
     event.preventDefault();
     const form = document.getElementById("passangers-form");
     form.style.display = "none"; 
