@@ -903,6 +903,10 @@ h3 img {
   color: #1770cf;
 }
 
+#menucompacto {
+  display: none;
+}
+
 footer {
   background-color: #1770cf;
   color: white;
@@ -988,10 +992,6 @@ footer p {
   border-bottom: 1px solid rgba(255, 255, 255, 0.5);
 }
 
-#menucompacto {
-  display: none;
-}
-
 @media (max-width: 1240px) {
   header #information h6 {
     display: none;
@@ -1075,10 +1075,58 @@ footer p {
   footer .linha2 .regulations {
     grid-area: regulations;
   }
-  #menu-compacto {
+  #menucompacto {
+    display: none;
+    width: 100%;
+    background-color: white;
+    z-index: 2000;
+    flex-direction: column;
+    align-items: flex-start;
+    border-bottom: 3px solid white;
+    justify-content: center;
+  }
+  #menucompacto #submenu1, #menucompacto #submenu2, #menucompacto #submenu3, #menucompacto #submenu4 {
     display: none;
   }
-  #menu-compacto #submenu1, #menu-compacto #submenu2, #menu-compacto #submenu3, #menu-compacto #submenu4 {
-    display: none;
+  #menucompacto button {
+    display: flex;
+    width: 100%;
+    height: 40px;
+    border-radius: 6px;
+    border-color: white;
+    color: white;
+    background-color: #1770cf;
+    align-items: center;
+    justify-content: center;
+  }
+  #menucompacto .menu2 {
+    display: flex;
+    width: 100%;
+    flex-wrap: nowrap;
+  }
+  #menucompacto .menu2 img {
+    width: 30px;
+    height: 30px;
+  }
+  #menucompacto #submenu1, #menucompacto #submenu2, #menucompacto #submenu3, #menucompacto #submenu4 {
+    width: 100%;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    flex-wrap: nowrap;
+  }
+  #menucompacto #submenu1 #titulo, #menucompacto #submenu2 #titulo, #menucompacto #submenu3 #titulo, #menucompacto #submenu4 #titulo {
+    font-size: smaller;
+    margin: 3px;
+    padding: 5px;
+    border-bottom: 1px solid rgba(128, 128, 128, 0.5);
+  }
+  #menucompacto #submenu1 a, #menucompacto #submenu2 a, #menucompacto #submenu3 a, #menucompacto #submenu4 a {
+    text-decoration: none;
+    display: block;
+    padding: 10px;
+  }
+  #menucompacto #submenu1 a:hover, #menucompacto #submenu2 a:hover, #menucompacto #submenu3 a:hover, #menucompacto #submenu4 a:hover {
+    color: #1770cf;
   }
 }/*# sourceMappingURL=estilos.css.map */
