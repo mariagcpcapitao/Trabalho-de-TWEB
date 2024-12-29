@@ -1095,7 +1095,7 @@ footer p {
   }
   footer .linha2 {
     display: grid !important;
-    grid-template-rows: repeat(5, 1fr) !important;
+    grid-template-rows: repeat(5, auto) !important;
     grid-template-areas: "services" "destinationsandoffers" "ita-airways" "assist" "regulations" !important;
   }
   footer .linha2 #titulo {
