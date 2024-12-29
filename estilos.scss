@@ -399,6 +399,15 @@ header {
 //Corpo
 
 
+//Menu Compacto
+#menu-compacto{ 
+  display:none;
+
+  #submenu1, #submenu2, #submenu3, #submenu4{
+    display:none;
+  }
+}
+
 //Capa
 .capa
 {
@@ -1116,17 +1125,15 @@ footer {
           background-color: transparent;
           border: none;
           
-  
           img{
-            height: 35px;
-            width: fit-content;
+            height: 25px;
+            width: 25px;
           }
-          
-          #menu{
-            height:45px;
+          #menubutao2{
+            display:none;
           }
         }
-      }
+      } 
     }
   }
   .capa{ 
