@@ -802,7 +802,7 @@ h3 img {
 }
 
 #container-offers {
-  width: 100%;
+  width: 2000px;
   background-color: rgba(208, 220, 229, 0.288);
 }
 
@@ -849,6 +849,31 @@ h3 img {
   text-decoration: none;
 }
 
+@media (max-width: 1240px) {
+  #container-offers {
+    width: auto;
+    height: auto;
+  }
+  .check-offers {
+    height: auto;
+  }
+  .offers-header h1 {
+    font-size: 1.5em;
+  }
+  .offers-header p {
+    font-size: 0.8em;
+    margin-bottom: 30px;
+  }
+  .offers-grid {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 30px;
+  }
+  .offer {
+    width: 100%;
+    margin-bottom: 30px;
+  }
+}
 .our-partners {
   margin: 2% 15%;
 }
@@ -890,6 +915,22 @@ h3 img {
   background-color: white;
 }
 
+@media (max-width: 1240px) {
+  .our-partners {
+    margin: 2% 5%;
+  }
+  .partners-grid {
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    justify-content: center;
+    gap: 20px;
+  }
+  .partners img {
+    height: auto;
+  }
+  .our-partners button {
+    width: 50%;
+  }
+}
 #flightInfo {
   display: none;
   background: white;
@@ -1023,7 +1064,7 @@ footer p {
   }
   .capa .form-container {
     width: 100%;
-    height: 100%;
+    height: auto;
     position: absolute;
     right: 0;
     bottom: 0;

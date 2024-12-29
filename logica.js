@@ -1,4 +1,5 @@
 //Menu de janela reduzida
+
 document.getElementById("menu").addEventListener("click", function() {
   var menubutao1 = document.getElementById("menubutao1");
   var menubutao2 = document.getElementById("menubutao2");
@@ -6,37 +7,15 @@ document.getElementById("menu").addEventListener("click", function() {
   if (menubutao1.style.display === "none") {
     menubutao1.style.display = "block";
     menubutao2.style.display = "none";
-
-    menucompacto.style.display = "none";
   } else {
     menubutao1.style.display = "none";
     menubutao2.style.display = "block";
-
-    menucompacto.style.display = "flex";
   }
 });
 
-//Controla os submenus
-document.addEventListener("DOMContentLoaded", function() {
-  const buttons = document.querySelectorAll("button");
-  const submenus = document.querySelectorAll("ul");
-
-  buttons.forEach(button => {
-      button.addEventListener("click", function() {
-          const submenuId = "submenu" + this.id.slice(-1); // obter o submenu correspondente ao botão clicado
-          submenus.forEach(submenu => {
-              if (submenu.id === submenuId) {
-                  submenu.style.display = (submenu.style.display === "none" || submenu.style.display === "") ? "block" : "none";
-              } else {
-                  submenu.style.display = "none";
-              }
-          });
-      });
-  });
-});
 
 
-//Capa
+//Capa e formularios
 const capas = [
     { imagem: './img/rome-tripoli.jpg', id: 'capa1' },
     { imagem: './img/dubai-rome.jpg', id: 'capa2' },
@@ -73,9 +52,10 @@ const capas = [
 
   botoesCapa.forEach((botao, index) => {
     botao.addEventListener('click', () => trocarCapa(index));
-    botao.addEventListener('')
   });
   
+
+  trocarCapa(0);
   
 
   document.addEventListener("DOMContentLoaded", () => {
@@ -130,6 +110,57 @@ document.getElementById("passangers").addEventListener("click", () => {
     form.style.display = "none"; 
   }); 
 
+
+document.addEventListener("DOMContentLoaded", () => {
+    // Função para atualizar o contador e o estado dos botões
+    function updatePassengerCount(button, action) {
+        const countSpan = button.closest("div").querySelector(".count");
+        const decrementButton = button.closest("div").querySelector(".minus");
+        let currentCount = parseInt(countSpan.textContent);
+
+        if (action === "increment") {
+            currentCount++;
+        } else if (action === "decrement" && currentCount > 0) {
+            currentCount--;
+        }
+
+        // Atualiza o valor do contador
+        countSpan.textContent = currentCount;
+
+        // Desativa o botão de menos se o contador for 0
+        if (currentCount === 0) {
+            decrementButton.disabled = true;
+        } else {
+            decrementButton.disabled = false;
+        }
+    }
+
+    // Selecionar todos os botões de incremento e decremento
+    const incrementButtons = document.querySelectorAll(".plus");
+    const decrementButtons = document.querySelectorAll(".minus");
+
+    // Adicionar eventos de clique para os botões de incremento
+    incrementButtons.forEach(button => {
+        button.addEventListener("click", (event) => {
+            event.preventDefault(); // Evita o comportamento padrão do botão
+            updatePassengerCount(button, "increment");
+        });
+    });
+
+    // Adicionar eventos de clique para os botões de decremento
+    decrementButtons.forEach(button => {
+        button.addEventListener("click", (event) => {
+            event.preventDefault(); // Evita o comportamento padrão do botão
+            updatePassengerCount(button, "decrement");
+        });
+
+        // Verifica o estado inicial para desativar os botões se necessário
+        const countSpan = button.closest("div").querySelector(".count");
+        if (parseInt(countSpan.textContent) === 0) {
+            button.disabled = true;
+        }
+    });
+});
 
 
 //Estado de Voo 
