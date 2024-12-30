@@ -1,5 +1,5 @@
 //Menu de janela reduzida
-//Menu de janela reduzida
+
 document.addEventListener("DOMContentLoaded", function() { 
   // Função para ocultar ou mostrar menu compacto com base em consultas de mídia 
   function handleMediaChange(mediaQuery) { 
@@ -243,6 +243,7 @@ document.addEventListener("DOMContentLoaded", function() {
       <strong>Dia do Voo:</strong> ${flightDate.toLocaleDateString()}<br> 
       <strong>Hora do Voo:</strong> ${flight1Time}<br> 
       <strong>Estado:</strong> ${flight1Status}<br><br> `; 
+      
       document.getElementById('flight2').innerHTML = 
       ` <p id="titulo">TP2:</p> <br> 
       <strong>${TipoDeVoo} para ${departure}</strong><br>
