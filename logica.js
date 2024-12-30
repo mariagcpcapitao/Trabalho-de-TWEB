@@ -232,11 +232,15 @@ document.addEventListener("DOMContentLoaded", function() {
       
       if (TipoDeVoo === 'Ida') { 
         flight1Status = (flightDate.getDate() % 2 === 0) ? 'No horário' : 'Atrasado'; 
-        flight2Status = (flightDate.getDate() % 2 === 0) ? 'No horário' : 'Atrasado';
-      } else { 
-        flight1Status = (flightDate.getMonth() % 2 === 0) ? 'No horário' : 'Chegou'; 
-        flight2Status = (flightDate.getMonth() % 2 === 0) ? 'No horário' : 'Chegou'; 
-      } 
+        flight2Status = flight1Status;
+      } else if (TipoDeVoo === 'Regresso') { 
+        console.log(flightDate.getMonth());
+        flight1Status = ((flightDate.getMonth() + 1) % 2 === 0) ? 'No horário' : 'Chegou'; //Pus +1 porque esta a contar do a partir do 0
+        flight2Status = flight1Status;
+      }
+
+      console.log(flight1Status, flight2Status);
+
       document.getElementById('flight1').innerHTML = 
       ` <p id="titulo">TP1:</p> <br> 
       <strong>${TipoDeVoo} para ${departure}</strong><br>
