@@ -152,7 +152,7 @@ header {
           #submenu1{
             display:none;
             position: absolute;
-            margin-top:15px;
+            margin-top:10px;
             padding:20px;
             background-color: $background-color;
             color:$text-color2;
@@ -205,7 +205,7 @@ header {
           #submenu2{
             display:none;
             position: absolute;
-            margin-top:15px;
+            margin-top:10px;
             padding:20px;
             background-color: $background-color;
             color:$text-color2;
@@ -255,7 +255,7 @@ header {
           #submenu3{
             display:none;
             position: absolute;
-            margin-top:15px;
+            margin-top:10px;
             padding:20px;
             background-color: $background-color;
             color:$text-color2;
@@ -304,7 +304,7 @@ header {
           #submenu4{
             display:none;
             position: absolute;
-            margin-top:15px;
+            margin-top:10px;
             padding:20px;
             background-color: $background-color;
             color:$text-color2;
@@ -897,7 +897,9 @@ h3 img
 //Offers
 #container-offers
 {
-  width: 2000px;
+  display:flex;
+  justify-content: center;
+  width: 100%;
   background-color: rgba(208, 220, 229, 0.288);
 }
 .check-offers
@@ -981,7 +983,7 @@ h3 img
 //Partners
 .our-partners
 {
-  margin:2% 15%
+  margin:2% 15%;
 }
 .partners-header
 {
@@ -1003,7 +1005,7 @@ h3 img
 .partners img
 {
   width: 100%;
-  height:60% ;
+  height:60%;
   margin-bottom: 10px;
 }
 #part-but
@@ -1248,7 +1250,7 @@ footer {
 
     .linha2 {
       display: grid !important;
-      grid-template-rows: repeat(5, 1fr) !important;
+      grid-template-rows: repeat(5, auto) !important;
       grid-template-areas: 
         "services"
         "destinationsandoffers" 

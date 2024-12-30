@@ -40,7 +40,7 @@ document.addEventListener("DOMContentLoaded", function() {
   // Definir a consulta de mídia
   var mediaQuery = window.matchMedia("(max-width: 1240px)"); 
   handleMediaChange(mediaQuery); 
-  mediaQuery.addEventListener('change', handleMediaChange); 
+  mediaQuery.addEventListener('change', (e) => handleMediaChange(e.target)); 
 });
 
 
@@ -212,36 +212,43 @@ radioButtons.forEach(radio => {
 });
 
 //Quando clicas "Proceed"
-document.getElementById('form4').addEventListener('submit', function(event) {
-  event.preventDefault(); //Evita que faca reset quando clica no botao
-
-  const departure = document.getElementById('departure').value;     
-  const flightDateValue = document.getElementById('data').value;
-  const flightDate = new Date(flightDateValue); // Para ter a certeza que esta certo
-  const TipoDeVoo = document.querySelector('select').value; 
-  console.log({departure, flightDateValue, TipoDeVoo }); 
-
-  if (departure && flightDateValue && TipoDeVoo) { 
+document.addEventListener("DOMContentLoaded", function() { 
+  document.getElementById('form4').addEventListener('submit', function(event) { 
+    event.preventDefault(); // Evita que faça reset quando clica no botão 
+    const departure = document.getElementById('departure').value; 
+    const flightDateValue = document.getElementById('data').value; 
+    const flightDate = new Date(flightDateValue); // Para ter a certeza que está certo 
+    const TipoDeVoo = document.getElementById('TipoDeVoo').value;
+    let flight1Status, flight2Status; 
+    
+    console.log({ departure, flightDateValue, TipoDeVoo }); 
+    
+    if (departure && flightDateValue && TipoDeVoo) { 
       document.getElementById('hidden').style.display = 'none'; 
       const flightInfo = document.getElementById('flightInfo'); 
-      flightInfo.style.display = 'block'; 
-
+      flightInfo.style.display = 'block';
       const flight1Time = departure.toLowerCase() === 'lisboa' ? '10:05' : '12:10'; 
       const flight2Time = departure.toLowerCase() === 'lisboa' ? '18:05' : '20:10'; 
-      const flight1Status = (flightDate.getDate() % 2 === 0) ? 'No horário' : 'Atrasado'; 
-      const flight2Status = (flightDate.getMonth() % 2 === 0) ? 'No horário' : 'Chegou'; 
-
+      
+      if (TipoDeVoo === 'Ida') { 
+        flight1Status = (flightDate.getDate() % 2 === 0) ? 'No horário' : 'Atrasado'; 
+        flight2Status = (flightDate.getDate() % 2 === 0) ? 'No horário' : 'Atrasado';
+      } else { 
+        flight1Status = (flightDate.getMonth() % 2 === 0) ? 'No horário' : 'Chegou'; 
+        flight2Status = (flightDate.getMonth() % 2 === 0) ? 'No horário' : 'Chegou'; 
+      } 
       document.getElementById('flight1').innerHTML = 
-                                        `<p id="titulo">TP1:</p> <br> 
-                                          <strong>Dia do Voo:</strong> ${flightDate.toLocaleDateString()}<br> 
-                                          <strong>Hora do Voo:</strong> ${flight1Time}<br> 
-                                          <strong>Estado:</strong> ${flight1Status}<br><br>`; 
-
-
+      ` <p id="titulo">TP1:</p> <br> 
+      <strong>${TipoDeVoo} para ${departure}</strong><br>
+      <strong>Dia do Voo:</strong> ${flightDate.toLocaleDateString()}<br> 
+      <strong>Hora do Voo:</strong> ${flight1Time}<br> 
+      <strong>Estado:</strong> ${flight1Status}<br><br> `; 
       document.getElementById('flight2').innerHTML = 
-                                        `<p id="titulo">TP2:</p> <br>
-                                         <strong>Dia do Voo:</strong>${flightDate.toLocaleDateString()}<br> 
-                                         <strong>Hora do Voo:</strong> ${flight2Time}<br> 
-                                         <strong>Estado:</strong> ${flight2Status}<br>`; 
-  }
+      ` <p id="titulo">TP2:</p> <br> 
+      <strong>${TipoDeVoo} para ${departure}</strong><br>
+      <strong>Dia do Voo:</strong> ${flightDate.toLocaleDateString()}<br> 
+      <strong>Hora do Voo:</strong> ${flight2Time}<br> 
+      <strong>Estado:</strong> ${flight2Status}<br> `; 
+    } 
+  }); 
 });
