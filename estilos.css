@@ -483,6 +483,15 @@ h3 img {
   opacity: 1;
 }
 
+.book2 {
+  visibility: hidden;
+}
+
+@media (max-width: 1240px) {
+  #book-2 {
+    display: block;
+  }
+}
 #type-check-in {
   display: flex;
   flex-direction: row;
