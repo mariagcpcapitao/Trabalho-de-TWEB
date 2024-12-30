@@ -552,6 +552,21 @@ h3 img
   visibility: visible;
   opacity: 1;
 }
+.book2
+{
+  visibility: hidden;
+}
+@media(max-width: 1240px)
+{
+  #book-2
+{
+  display: block;
+}
+}
+
+
+
+
 //check-in
 #type-check-in
 {
