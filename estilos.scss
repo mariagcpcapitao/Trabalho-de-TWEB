@@ -558,11 +558,61 @@ h3 img
 }
 @media(max-width: 1240px)
 {
-  #book-2
-{
-  display: block;
+  .book2   
+  {
+    visibility: visible;
+    display: flex;
+  }
+  .book2 button
+  {
+    background: none;
+    border: 2px solid lightgray;
+    padding: 5px;
+    text-align: left;
+    width: 200px;
+    height: 100px;
+    position: relative;
+  }
+  #from-btn
+  {
+    border-radius: 8px 0px 0px 8px;
+  }
+  #to-btn
+  {
+    border-radius: 0px 8px 8px 0px;
+  }
+  .book1
+  {
+    display: none;
+  }
+  .book2 img
+  {
+    position: relative;
+    width: 20px;
+  }
+  .book2 h1
+  {
+    font-size: 1.2em;
+    color: #777;
+    margin-left: 20px;
+    position: relative;
+  }
+  .book2 p
+  {
+    font-size: 1.5em;
+    color: $text-color3;
+    margin-top: 20px;
+  }
+  #to-btn p
+  {
+    color: $primary-color;
+  }
+  .form-container
+  {
+    height: fit-content;
+  }
 }
-}
+
 
 
 
@@ -1212,18 +1262,7 @@ footer {
       } 
     }
   }
-  .capa{ 
-    > *:not(.form-container) {
-      display: none;
-    }
-    .form-container{
-      width: 100%;
-      height: auto;
-      position: absolute;
-      right: 0;
-      bottom: 0;
-      border-radius: 0;
-    }
+ 
   }
   .best-offers-grid{
     flex-wrap: wrap;

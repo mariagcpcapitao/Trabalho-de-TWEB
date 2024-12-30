@@ -483,6 +483,56 @@ h3 img {
   opacity: 1;
 }
 
+.book2 {
+  visibility: hidden;
+}
+
+@media (max-width: 1240px) {
+  .book2 {
+    visibility: visible;
+    display: flex;
+  }
+  .book2 button {
+    background: none;
+    border: 2px solid lightgray;
+    padding: 5px;
+    text-align: left;
+    width: 200px;
+    height: 100px;
+    position: relative;
+  }
+  #from-btn {
+    border-radius: 8px 0px 0px 8px;
+  }
+  #to-btn {
+    border-radius: 0px 8px 8px 0px;
+  }
+  .book1 {
+    display: none;
+  }
+  .book2 img {
+    position: relative;
+    width: 20px;
+  }
+  .book2 h1 {
+    font-size: 1.2em;
+    color: #777;
+    margin-left: 20px;
+    position: relative;
+  }
+  .book2 p {
+    font-size: 1.5em;
+    color: #0B2340;
+    margin-top: 20px;
+  }
+  #to-btn p {
+    color: #1770cf;
+  }
+  .form-container {
+    height: -moz-fit-content;
+    height: fit-content;
+  }
+}
 #type-check-in {
   display: flex;
   flex-direction: row;
