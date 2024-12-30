@@ -484,12 +484,55 @@ h3 img {
 }
 
 .book2 {
-  visibility: hidden;
+  display: none;
 }
 
 @media (max-width: 1240px) {
+  .form-container {
+    position: absolute;
+    width: 100%;
+    right: 0;
+    top: 0;
+  }
+  .select-capa {
+    position: absolute;
+    bottom: 0px;
+    width: 500px;
+    height: 30px;
+    padding: 0px 60px;
+    background-color: white;
+    border-radius: 0px 10px 0px 0px;
+    display: flex;
+    justify-content: space-between;
+  }
+  #container-capa {
+    border-radius: 0px;
+    width: 350px;
+    height: 150px;
+    position: absolute;
+    bottom: 20px;
+    right: 25px;
+    font-size: 0.7em;
+  }
+  .select-capa {
+    position: absolute;
+    bottom: -100px;
+    width: 400px;
+    height: 100px;
+    padding: 0px 10px;
+    background-color: white;
+    border-radius: 0px 10px 0px 0px;
+    display: flex;
+    justify-content: space-between;
+    font-size: 1em;
+  }
+  .select-capa p {
+    display: none;
+    background-image: url(./img/ci.jpg);
+  }
+}
+@media (max-width: 1240px) {
   .book2 {
-    visibility: visible;
     display: flex;
   }
   .book2 button {
@@ -527,10 +570,6 @@ h3 img {
   }
   #to-btn p {
     color: #1770cf;
-  }
-  .form-container {
-    height: -moz-fit-content;
-    height: fit-content;
   }
 }
 #type-check-in {
@@ -1110,17 +1149,6 @@ footer p {
   }
   header nav .menu-other button #menubutao2 {
     display: none;
-  }
-  .capa > *:not(.form-container) {
-    display: none;
-  }
-  .capa .form-container {
-    width: 100%;
-    height: auto;
-    position: absolute;
-    right: 0;
-    bottom: 0;
-    border-radius: 0;
   }
   .best-offers-grid {
     flex-wrap: wrap;

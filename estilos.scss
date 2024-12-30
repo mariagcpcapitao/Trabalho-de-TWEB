@@ -554,13 +554,65 @@ h3 img
 }
 .book2
 {
-  visibility: hidden;
+  display: none;
 }
+@media(max-width: 1240px)
+{
+  .form-container
+  {
+    position: absolute;
+    width: 100%;
+    right: 0;
+    top: 0;
+  }
+  .select-capa
+  {
+    position: absolute;
+    bottom: 0px;
+    width: 500px;
+    height: 30px;
+    padding: 0px 60px ;
+    background-color: white;
+    border-radius: 0px 10px 0px 0px;
+    display: flex;
+    justify-content: space-between;
+  }
+
+  #container-capa
+  {
+    border-radius: 0px;
+    width: 350px;
+    height: 150px;
+    position: absolute;
+    bottom: 20px;
+    right: 25px;
+    font-size: 0.7em;
+  }
+  .select-capa
+  {
+    position: absolute;
+    bottom: -100px;
+    width: 400px;
+    height: 100px;
+    padding: 0px 10px ;
+    background-color: white;
+    border-radius: 0px 10px 0px 0px;
+    display: flex;
+    justify-content: space-between;
+    font-size: 1em;
+  }
+  .select-capa p
+  {
+    display: none;
+    background-image: url(./img/ci.jpg);
+  }
+}
+
+
 @media(max-width: 1240px)
 {
   .book2   
   {
-    visibility: visible;
     display: flex;
   }
   .book2 button
@@ -606,10 +658,6 @@ h3 img
   #to-btn p
   {
     color: $primary-color;
-  }
-  .form-container
-  {
-    height: fit-content;
   }
 }
 
@@ -1262,8 +1310,7 @@ footer {
       } 
     }
   }
- 
-  }
+  
   .best-offers-grid{
     flex-wrap: wrap;
   }
@@ -1380,4 +1427,3 @@ footer {
     }
   }
 }
-
