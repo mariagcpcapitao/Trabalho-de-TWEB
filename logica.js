@@ -141,54 +141,33 @@ document.getElementById("passangers").addEventListener("click", (event) => {
   }); 
 
 
-document.addEventListener("DOMContentLoaded", () => {
-    // Função para atualizar o contador e o estado dos botões
-    function updatePassengerCount(button, action) {
-        const countSpan = button.closest("div").querySelector(".count");
-        const decrementButton = button.closest("div").querySelector(".minus");
-        let currentCount = parseInt(countSpan.textContent);
+  document.addEventListener("DOMContentLoaded", () => {
+    // Atualiza o contador e o estado do botão de menos
+    function updateCount(button, action) {
+        const container = button.closest(".contagem");
+        const countSpan = container.querySelector("span");
+        const decrementButton = container.querySelector(".minus");
+        let count = parseInt(countSpan.textContent.trim());
 
-        if (action === "increment") {
-            currentCount++;
-        } else if (action === "decrement" && currentCount > 0) {
-            currentCount--;
-        }
+        count = action === "increment" ? count + 1 : Math.max(0, count - 1);
 
-        // Atualiza o valor do contador
-        countSpan.textContent = currentCount;
-
-        // Desativa o botão de menos se o contador for 0
-        if (currentCount === 0) {
-            decrementButton.disabled = true;
-        } else {
-            decrementButton.disabled = false;
-        }
+        countSpan.textContent = count;
+        decrementButton.disabled = count === 0;
     }
 
-    // Selecionar todos os botões de incremento e decremento
-    const incrementButtons = document.querySelectorAll(".plus");
-    const decrementButtons = document.querySelectorAll(".minus");
-
-    // Adicionar eventos de clique para os botões de incremento
-    incrementButtons.forEach(button => {
+    // Adiciona eventos aos botões
+    document.querySelectorAll(".plus, .minus").forEach(button => {
         button.addEventListener("click", (event) => {
-            event.preventDefault(); // Evita o comportamento padrão do botão
-            updatePassengerCount(button, "increment");
+            event.preventDefault();
+            const action = button.classList.contains("plus") ? "increment" : "decrement";
+            updateCount(button, action);
         });
     });
 
-    // Adicionar eventos de clique para os botões de decremento
-    decrementButtons.forEach(button => {
-        button.addEventListener("click", (event) => {
-            event.preventDefault(); // Evita o comportamento padrão do botão
-            updatePassengerCount(button, "decrement");
-        });
-
-        // Verifica o estado inicial para desativar os botões se necessário
-        const countSpan = button.closest("div").querySelector(".count");
-        if (parseInt(countSpan.textContent) === 0) {
-            button.disabled = true;
-        }
+    // Inicializa os botões 
+    document.querySelectorAll(".minus").forEach(button => {
+        const countSpan = button.closest(".contagem").querySelector("span");
+        button.disabled = parseInt(countSpan.textContent.trim()) === 0;
     });
 });
 
